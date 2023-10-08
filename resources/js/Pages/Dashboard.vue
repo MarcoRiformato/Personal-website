@@ -1,5 +1,5 @@
 <template>
-<AppLayout>
+<AppLayout title="Main">
 <div class="bg-base-200 overflow-hidden">
     <div class="relative isolate pt-14">
     <!-- Benvenuto -->
@@ -8,11 +8,11 @@
     class="-mt-20 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
         <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
         <div class="flex"></div>
-        <h1 class=" max-w-lg text-4xl font-bold tracking-tight sm:text-6xl">A better way to ship your projects</h1>
-        <p class="mt-6 text-lg leading-8">Esse id magna consectetur fugiat non dolor in ad laboris magna laborum ea consequat. Nisi irure aliquip nisi adipisicing veniam voluptate id. In veniam incididunt ex veniam adipisicing sit.</p>
+        <h1 class=" max-w-lg text-4xl font-bold tracking-tight sm:text-6xl">Il tuo nuovo studio legale del futuro</h1>
+        <p class="mt-6 text-lg leading-8">Nuovo sito. Compari più alto su Google. Marketing digitale. Campagne pubblicitarie. Siamo qui per te</p>
         <div class="mt-10 flex items-center gap-x-6">
-            <a href="#" class="btn btn-primary">Get started</a>
-            <a href="#" class="text-sm font-semibold leading-6">Learn more <span aria-hidden="true">→</span></a>
+            <a href="#" class="btn btn-primary">Parliamo</a>
+            <a href="#" class="text-sm font-semibold leading-6">Casi studio <span aria-hidden="true">→</span></a>
         </div>
         </div>
         <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
@@ -36,9 +36,9 @@
     id="servizi"
     class=" mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
-        <div class="lg:row-start-2 lg:max-w-md">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Boost your productivity.<br />Start using our app today.</h2>
-        <p class="mt-6 text-lg leading-8">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla. Ac euismod vel sit maecenas.</p>
+        <div class="lg:row-start-2 lg:max-w-md ">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Più clienti. Più qualità.<br />Start using our app today.</h2>
+        <p class="mt-6 text-lg leading-8">Noi ti troviamo i clienti. Te potrai occuparti per ciò che preferisci fare</p>
         </div>
         <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none" width="2432" height="1442" />
         <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
@@ -59,6 +59,66 @@
     </div>
     </div>
     
+    <!--Second feature-->
+
+  <div class="overflow-hidden py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:ml-auto lg:pl-4 lg:pt-4">
+          <div class="lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7">Deploy faster</h2>
+            <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">A better workflow</p>
+            <p class="mt-6 text-lg leading-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
+              <div v-for="feature in features" :key="feature.name" class="relative pl-9">
+                <dt class="inline font-semibold">
+                  <component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5" aria-hidden="true" />
+                  {{ feature.name }}
+                </dt>
+                {{ ' ' }}
+                <dd class="inline">{{ feature.description }}</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div class="flex items-start justify-end lg:order-first">
+          <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" width="2432" height="1442" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video -->
+  <div class="-mt-20 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl sm:text-center">
+        <h2 class="text-base font-semibold leading-7">Everything you need</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">No server? No problem.</p>
+        <p class="mt-6 text-lg leading-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+      </div>
+    </div>
+    <div class="relative overflow-hidden pt-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="App screenshot" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432" height="1442" />
+        <div class="relative" aria-hidden="true">
+          <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]" />
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+      <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+        <div v-for="feature in features" :key="feature.name" class="relative pl-9">
+          <dt class="inline font-semibold">
+            <component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5" aria-hidden="true" />
+            {{ feature.name }}
+          </dt>
+          {{ ' ' }}
+          <dd class="inline">{{ feature.description }}</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
     <!-- Testimonial -->
     <div 
     id="testimonials"
@@ -77,11 +137,11 @@
               <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86" />
             </svg>
             <blockquote class="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
-              <p>Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.</p>
+              <p>Una forza inarrestabile. Dal suo arrivo ha svoltato la nostra azienda in 100 giorni. Ha creato un sito, ha creato ed ottimizzato la nostra scheda Google My Business da zero. Ci ha aiutato con la creazioen dei contenuti. </p>
             </blockquote>
             <figcaption class="mt-8 text-base">
-              <div class="font-semibold text-white">Judith Black</div>
-              <div class="mt-1 text-gray-400">CEO of Workcation</div>
+              <div class="font-semibold text-white">Pietro Gentili</div>
+              <div class="mt-1 text-gray-400">Presidente Forum Giovani dell' Elba</div>
             </figcaption>
           </figure>
         </div>
@@ -91,11 +151,10 @@
     <!-- CTA -->
     <div class="-mt-20 mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
       <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-        <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Boost your productivity today.</h2>
-        <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
+        <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Dacci 100 giorni. Sei pronto?</h2>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+          <a href="#" class="btn btn-primary">Sono pronto</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-white">Casi studio <span aria-hidden="true">→</span></a>
         </div>
         <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
           <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
@@ -150,27 +209,31 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
 
 const faqs = [
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Di cosa ti occupi?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  // More questions...
+      "Sono specializzato in sviluppo, SEO, ottimizzazione vendite e marketing per gli studi legali",
+  }
 ]
 
 const features = [
 {
-name: 'Push to deploy.',
-description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+name: 'Sviluppo web.',
+description: 'Il tuo nuovo sito. In 100 giorni. Esclusiva comunale.',
 icon: CloudArrowUpIcon,
 },
 {
-name: 'SSL certificates.',
-description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+name: 'Ottimizzazione per le vendite.',
+description: 'Parliamoci chiaro. Un sito bello è un conto. Ma vogliamo un sito che converta bene e che ti garantisca molti clienti',
+icon: CloudArrowUpIcon,
+},
+{
+name: 'Potenziamento SEO e Google My Business.',
+description: 'Comparirai in alto sulle ricerche di Google. Avrai recensioni più alte.',
 icon: LockClosedIcon,
 },
 {
-name: 'Database backups.',
-description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
+name: 'Marketing online.',
+description: 'Dalla definizione della tua strategia marketing, alla gestione social o pubblicità su Google. Siamo qui per te',
 icon: ServerIcon,
 },
 ]

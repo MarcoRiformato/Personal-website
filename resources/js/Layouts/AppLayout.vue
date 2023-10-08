@@ -16,6 +16,7 @@ title: String,
 const showingNavigationDropdown = ref(false);
 
 const switchToTeam = (team) => {
+event.preventDefault();
 router.put(route('current-team.update'), {
 team_id: team.id,
 }, {
@@ -82,23 +83,20 @@ const scrollToSection = (sectionId) => {
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <Link :href="route('dashboard')">
+                    <NavLink @click="scrollToSection('benvenuto')">
                         <ApplicationMark class="block h-9 w-auto" />
-                    </Link>
+                    </NavLink>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <NavLink @click="scrollToSection('benvenuto')" :active="route().current('dashboard')">
-                        Home
-                    </NavLink>
-                    <NavLink @click="scrollToSection('servizi')" :active="route().current('dashboard')">
+                    <NavLink @click="scrollToSection('servizi')">
                         Servizi
                     </NavLink>
-                    <NavLink @click="scrollToSection('testimonials')" :active="route().current('dashboard')">
+                    <NavLink @click="scrollToSection('testimonials')">
                         Testimonianze
                     </NavLink>
-                    <NavLink @click="scrollToSection('faq')" :active="route().current('dashboard')">
+                    <NavLink @click="scrollToSection('faq')">
                         FAQ
                     </NavLink>
                 </div>
@@ -183,8 +181,14 @@ const scrollToSection = (sectionId) => {
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                Dashboard
+            <ResponsiveNavLink  @click="scrollToSection('servizi')">
+                Servizi
+            </ResponsiveNavLink>
+            <ResponsiveNavLink  @click="scrollToSection('testimonials')">
+                Testimonianze
+            </ResponsiveNavLink>
+            <ResponsiveNavLink  @click="scrollToSection('faq')">
+                FAQ
             </ResponsiveNavLink>
         </div>
 

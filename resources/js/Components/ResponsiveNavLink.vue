@@ -1,11 +1,8 @@
 <script setup>
 import { computed } from 'vue';
-import { Link } from '@inertiajs/vue3';
 
 const props = defineProps({
-    active: Boolean,
-    href: String,
-    as: String,
+    active: Boolean
 });
 
 const classes = computed(() => {
@@ -16,13 +13,7 @@ const classes = computed(() => {
 </script>
 
 <template>
-    <div>
-        <button v-if="as == 'button'" :class="classes" class="w-full text-left">
-            <slot />
-        </button>
-
-        <Link v-else :href="href" :class="classes">
-            <slot />
-        </Link>
+    <div @click="$emit('click')" :class="classes">
+        <slot />
     </div>
 </template>
