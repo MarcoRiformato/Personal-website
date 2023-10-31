@@ -83,7 +83,7 @@ const scrollToSection = (sectionId) => {
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <NavLink @click="scrollToSection('benvenuto')">
+                    <NavLink :href="route('dashboard')">
                         <ApplicationMark class="block h-9 w-auto" />
                     </NavLink>
                 </div>
@@ -98,6 +98,9 @@ const scrollToSection = (sectionId) => {
                     </NavLink>
                     <NavLink @click="scrollToSection('faq')">
                         FAQ
+                    </NavLink>
+                    <NavLink :href="route('book')">
+                        Prenota
                     </NavLink>
                 </div>
             </div>
