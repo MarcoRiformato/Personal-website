@@ -75,8 +75,8 @@ const scrollToSection = (sectionId) => {
 
 <Banner />
 
-<div class="min-h-screen bg-base-200">
-<nav class="sticky top-0 z-50 border-b border-gray-100 bg-base-200">
+<div class="min-h-screen bg-base">
+<nav class="sticky top-0 z-50 border-b border-gray-100 bg-neutral">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -281,7 +281,7 @@ const scrollToSection = (sectionId) => {
     <slot />
 </main>
 </div>
-<footer class="bg-base-200 -mt-12">
+<footer class="bg-neutral -mt-12">
 <div class="mx-auto max-w-7xl -mt-30 overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
     <div class="mt-10 flex justify-center space-x-10">
     <a v-for="item in navigation.social" :key="item.name" target="_blank" :href="item.href" class=" hover:text-gray-500">
@@ -289,7 +289,7 @@ const scrollToSection = (sectionId) => {
         <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
     </a>
     </div>
-    <p class="mt-10 text-center text-xs leading-5 ">&copy; 2023 - Riformato Marco</p>
+    <p class="mt-10 text-center text-xs leading-5 text-info">&copy; 2023 - Riformato Marco</p>
 </div>
 </footer>
 </div>
