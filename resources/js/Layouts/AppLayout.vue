@@ -90,7 +90,7 @@ const scrollToSection = (sectionId) => {
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <NavLink @click="scrollToSection('servizi')">
+                    <NavLink @click="scrollToSection('servizi')" :active="route().current('home')">
                         Servizi
                     </NavLink>
                     <NavLink @click="scrollToSection('testimonials')">
@@ -99,7 +99,7 @@ const scrollToSection = (sectionId) => {
                     <NavLink @click="scrollToSection('faq')">
                         FAQ
                     </NavLink>
-                    <NavLink :href="route('book')">
+                    <NavLink :href="route('book')" :active="route().current('book')">
                         Prenota
                     </NavLink>
                 </div>
@@ -183,17 +183,18 @@ const scrollToSection = (sectionId) => {
 
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
-        <div class="pt-2 pb-3 space-y-1">
-            <ResponsiveNavLink  @click="scrollToSection('servizi')">
+        <div class="pt-2 pb-3 space-y-1 flex flex-col items-center">
+            <ResponsiveNavLink @click="scrollToSection('servizi')">
                 Servizi
-            </ResponsiveNavLink>
-            <ResponsiveNavLink  @click="scrollToSection('testimonials')">
+            </ResponsiveNavLink><!--
+            <ResponsiveNavLink @click="scrollToSection('testimonials')">
                 Testimonianze
-            </ResponsiveNavLink>
-            <ResponsiveNavLink  @click="scrollToSection('faq')">
-                FAQ
+            </ResponsiveNavLink>-->
+            <ResponsiveNavLink :href="route('book')">
+                Prenota
             </ResponsiveNavLink>
         </div>
+
 
         <!-- Responsive Settings Options -->
         <div v-if="$page.props.auth.user" class="pt-4 pb-1 border-t border-gray-200">

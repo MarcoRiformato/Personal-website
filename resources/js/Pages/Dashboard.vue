@@ -33,24 +33,24 @@ class="-mt-20 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:g
 </div>
   
 <!-- 3 Columns -->
-<div class="bg-primary-content py-24 sm:py-32" >
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="bg-primary-content py-24 sm:py-32  mx-auto lg:px-8" >
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
       <div class="mx-auto max-w-2xl lg:text-center">
         <h2 class="font-semibold leading-7 text-secondary">Deploy faster</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">Everything you need to deploy your app</p>
-        <p class="mt-6 text-lg leading-8">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">Offriamo una soluzione tutto-incluso per il vostro studio legale</p>
+        <p class="mt-6 text-lg leading-8">Dallo sviluppo di un sito per rimanere al passo coi tempi, alle strategie per fare in modo che tu compaia più in alto nelle ricerche Google, all'evoluzione per far convertire sempre più</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
         <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-          <div v-for="feature in features" :key="feature.name" class="flex flex-col">
+          <div v-for="summary in summaries" :key="summary.name" class="flex flex-col">
             <dt class="flex items-center gap-x-3 font-semibold leading-7 text-secondary">
-              <component :is="feature.icon" class="h-5 w-5 flex-none text-primary" aria-hidden="true" />
-              {{ feature.name }}
+              <component :is="summary.icon" class="h-5 w-5 flex-none text-primary" aria-hidden="true" />
+              {{ summary.name }}
             </dt>
             <dd class="mt-4 flex flex-auto flex-col leading-7">
-              <p class="flex-auto">{{ feature.description }}</p>
+              <p class="flex-auto">{{ summary.description }}</p>
               <p class="mt-6">
-                <a :href="feature.href" class="text-sm font-semibold leading-6 text-primary">Learn more <span aria-hidden="true">→</span></a>
+                <a :href="summary.href" class="text-sm font-semibold leading-6 text-primary">Scopri di più <span aria-hidden="true">→</span></a>
               </p>
             </dd>
           </div>
@@ -60,23 +60,23 @@ class="-mt-20 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:g
 </div>
 
 <!-- Sviluppo web -->
-<div class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
+<div class="mt-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
     <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
         <div class="lg:row-start-2 lg:max-w-md">
-          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Boost your productivity.<br />Start using our app today.</h2>
-          <p class="mt-6 text-lg leading-8">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla. Ac euismod vel sit maecenas.</p>
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Non siamo i soliti sviluppatori di siti<br /></h2>
+          <p class="mt-6 text-lg leading-8">Vi è la credenza che un sito serva solamente per farsi trovare su internet. In realtà, può essere uno strumento potente che ti permette di risparmiare tempo ed aprirti un mondo di nuove opportunità</p>
         </div>
         <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none" width="2432" height="1442" />
         <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
           <dl class="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
-            <div v-for="feature in features" :key="feature.name" class="relative">
+            <div v-for="sviluppo in sviluppi" :key="sviluppo.name" class="relative">
               <dt class="ml-9 inline-block font-semibold">
-                <component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5 text-primary" aria-hidden="true" />
-                <p class="text-secondary">{{ feature.name }}</p>
+                <component :is="sviluppo.icon" class="absolute left-1 top-1 h-5 w-5 text-primary" aria-hidden="true" />
+                <p class="text-secondary">{{ sviluppo.name }}</p>
               </dt>
               {{ ' ' }}<br />
-              <dd class="inline">{{ feature.description }}</dd>
+              <dd class="inline">{{ sviluppo.description }}</dd>
             </div>
           </dl>
         </div>
@@ -177,60 +177,82 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
 
-const faqs = [
+const summaries = [
   {
-    question: "Di cosa ti occupi?",
-    answer:
-      "Sono specializzato in sviluppo, SEO, ottimizzazione vendite e marketing per gli studi legali",
+    name: 'Sviluppo sito internet',
+    description: 'Ti fornirò un sito personalizzato per evidenziare la competenza del tuo studio. Otterai anche un gestionale per la pubblicazione di articoli, modifica in autonomia delle sezioni della pagina e tanto altro'
+  },
+  {
+    name: 'Posizionamento su Google (SEO)',
+    description: 'Come fare per poter comparire per primi quando si cerca "Avvocato Firenze" o "Studio legale a Modena" oppure "Avvocato penalista" ? Si tratta di SEO e ti aiuterò a scalare le classifiche delle ricerche Google.'
+  },
+  {
+    name: 'Ottimizzazione per le vendite (CRO)',
+    description: 'Un sito web con un buon design è un buon inizio. Ma vogliamo anche che l investimento sia proficuo! Quindi, andremo a studiare ed evolvere la pagina con delle strategie CRO per fare in modo che più persone diventino interessati al tuo studio legale, per poi spingerli fino a prenotare una chiamata'
   }
 ]
 
-const features = [
+const sviluppi = [
 {
-name: 'Sviluppo web: il tuo nuovo sito',
-description: 'Il tuo nuovo sito. In 100 giorni. Esclusiva comunale.',
+name: 'Sviluppo su misura',
+description: 'Basta con i soliti costruttori di siti, che li rendono tutti uguali. Concorderemo insieme gli obbiettivi e l aspetto che vuoi trasmettere, di modo che avrai esattamente ciò di cui hai bisogno',
 icon: CloudArrowUpIcon,
 },
 {
-name: 'CRO: Evoluzione continua di ottimizzazione alle vendite',
-description: 'Parliamoci chiaro. Un sito bello è un conto. Ma vogliamo un sito che converta bene e che ti garantisca molti clienti',
+name: 'Gestionale CMS integrato',
+description: 'Niente richieste di credenziali: avrai sempre libertà di poter modificare liberamente diverse sezioni del tuo sito. Potrai scrivere articoli, modificare la sezione "chi siamo" o semplicemente modificare il nome di una categoria',
 icon: CloudArrowUpIcon,
 },
 {
-name: 'SEO: Scala le classifiche dei risultati di Google',
-description: 'Comparirai in alto sulle ricerche di Google. Avrai recensioni più alte.',
+name: 'Sistema di prenotazione online',
+description: 'Sappiamo che in questo settore, il telefono non smette mai di squillare ed è difficile organizzare i tempi. Per questo motivo, ho previsto un sistema di prenotazione delle chiamate, per ogni fase del processo di acquisizione e retenzione clienti. Avrai modo di impostare una finestra di orario in cui poter accettare appuntamenti. Che sia un nuovo cliente, oppure una persona che stai già aiutando, avrà modo di organizzare in autonomia una chiamata.',
 icon: LockClosedIcon,
-},
-]
-
-const secondo = [
-{
-name: 'SEO locale.',
-description: 'Facendo una ricerca su Google, sarai tra i primi che le persone vedranno',
-icon: CloudArrowUpIcon,
-},
-{
-name: 'Ottimizzazione per le vendite.',
-description: 'Parliamoci chiaro. Un sito bello è un conto. Ma vogliamo un sito che converta bene e che ti garantisca molti clienti',
-icon: CloudArrowUpIcon,
-},
-{
-name: 'Potenziamento SEO e Google My Business.',
-description: 'Comparirai in alto sulle ricerche di Google. Avrai recensioni più alte.',
-icon: LockClosedIcon,
-},
-{
-name: 'Marketing online.',
-description: 'Dalla definizione della tua strategia marketing, alla gestione social o pubblicità su Google. Siamo qui per te',
-icon: ServerIcon,
 },
 ]
 
 const navigation = [
     { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
+    { name: 'sviluppi', href: '#' },
     { name: 'Marketplace', href: '#' },
     { name: 'Company', href: '#' },
+]
+
+const faqs = [
+  {
+    question: "Di cosa ti occupi?",
+    answer:
+      "Sono specializzato in sviluppo, SEO, ottimizzazione vendite e marketing per gli studi legali",
+  },
+  {
+    question: "Quanto tempo ci vuole per vedere i risultati?",
+
+    answer: "Dipende dal servizio: un nuovo sito web può garantire risultati in poche settimane, mentre la ottimizzazione SEO e CRO può richiedere diversi mesi."
+  },
+  {
+    question: "Avete una tabella prezzi?",
+
+    answer: "La nostra prima priorità è portare dei risultati. Per questo motivo possiamo comunicare una stima di prezzo solamente dopo una prima chiamata conoscitiva"
+  },
+  {
+    question: "Offrite supporto post-vendita?",
+
+    answer: "Non svilupperò un sito per lasciarti con le mani in mano. Il percorso prevede un affiancamento e assistenza continua, in base al tipo di abbonamento scelto"
+  },
+  {
+    question: "Posso fare modifiche al sito una volta terminato?",
+
+    answer: "Certamente! Seppure nel nostro pacchetto è anche inclusa la creazione di articoli e aggiornamenti continui, crediamo sia importante darti la possibilità di poter modificare liberamente il tuo sito."
+  },
+  {
+    question: "Cos'è la SEO?",
+
+    answer: "La Search Engine Optimization consiste nella pratica di ottimizzare ed aggiornare un sito di modo che risulti più in alto nelle ricerche di Google. "
+  },
+  {
+    question: "Cos'è la CRO?",
+
+    answer: "La Convertion Rate Optimization, ovvero Ottimizzazione del tasso di conversione, consiste nello studio ed evoluzione continua di un sito per fare in modo di raggiungere l obbiettivo (più tempo passato sulla pagina, scaricare un contenuto per ottenere l indirizzo email,)"
+  }
 ]
 
 const mobileMenuOpen = ref(false)
