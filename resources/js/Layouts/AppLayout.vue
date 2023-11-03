@@ -90,18 +90,22 @@ const scrollToSection = (sectionId) => {
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <NavLink @click="scrollToSection('servizi')" :active="route().current('home')">
-                        Servizi
+                    <NavLink @click="scrollToSection('servizi')" :active="route().current('services')">
+                        Voglio un nuovo sito
                     </NavLink>
-                    <NavLink @click="scrollToSection('testimonials')">
-                        Testimonianze
+                    <NavLink @click="scrollToSection('servizi')" :active="route().current('services')">
+                        Voglio aumentare la visibilità del mio sito
                     </NavLink>
-                    <NavLink @click="scrollToSection('faq')">
-                        FAQ
+                    <NavLink @click="scrollToSection('servizi')" :active="route().current('services')">
+                        Voglio trasformare i visitatori in clienti
                     </NavLink>
-                    <NavLink :href="route('book')" :active="route().current('book')">
-                        Prenota
+                    <NavLink 
+                        class="bg-secondary text-primary-content hover:bg-secondary-focus hover:text-white px-4 py-2 rounded-lg transition" 
+                        :href="route('book')" 
+                        :active="route().current('book')">
+                        Parliamo ➡️
                     </NavLink>
+
                 </div>
             </div>
 
