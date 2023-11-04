@@ -98,14 +98,16 @@
                     </svg>
                   </a>
                 </li>
-                <li>
+                <a href="a" class="text-info">@MarcoRiformato</a>
+                <li class="ml-8">
                   <a :href="person.linkedinUrl" class="">
                     <span class="sr-only">LinkedIn</span>
-                    <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="18" height="18" viewBox="0 0 50 50" fill="currentColor" class="icon icons8-Facebook-Filled" >
+                          <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path>
                     </svg>
                   </a>
                 </li>
+                <a class=" text-info" href="au">Marco Riformato DigitaLegale</a>
               </ul>
             </div>
           </li>
@@ -147,7 +149,7 @@
     <div class="relative isolate overflow-hidden bg-primary-content px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
       <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Rivoluziona la tua presenza online. <br/>Siti su misura per studi legali innovatori </h2>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="#" class="btn btn-primary">Cominciamo</a>
+        <a href="#" class="btn btn-primary"  @click.prevent="openCalendlyPopup">Cominciamo</a>
         <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
       </div>
       <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
@@ -195,7 +197,7 @@
     <div class="relative isolate overflow-hidden bg-primary-content px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
       <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Aumenta la visibilità del tuo sito.<br/>Compari per primo nelle riceche Google </h2>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="#" class="btn btn-primary">Cominciamo</a>
+        <a href="#" class="btn btn-primary"  @click.prevent="openCalendlyPopup">Cominciamo</a>
         <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
       </div>
       <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
@@ -243,7 +245,7 @@
     <div class="relative isolate overflow-hidden bg-primary-content px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
       <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Capitalizza il traffico del tuo sito.<br/>Converti visitatori in clienti</h2>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="#" class="btn btn-primary">Cominciamo</a>
+        <a href="#" class="btn btn-primary"  @click.prevent="openCalendlyPopup">Cominciamo</a>
         <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
       </div>
       <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
@@ -325,6 +327,11 @@
   import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
   import { MinusSmallIcon, PlusSmallIcon, ArrowPathIcon, GlobeEuropeAfricaIcon, MagnifyingGlassIcon, CursorArrowRaysIcon
  } from '@heroicons/vue/24/outline'
+
+ function openCalendlyPopup(event) {
+  event.preventDefault();
+  Calendly.initPopupWidget({ url: 'https://calendly.com/marco-riformato/incontro-di-valutazione' });
+}
 
  const scrollToSection = (sectionId) => {
   const element = document.getElementById(sectionId);
