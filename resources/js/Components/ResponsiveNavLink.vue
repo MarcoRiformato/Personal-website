@@ -4,7 +4,6 @@ import { Link } from '@inertiajs/vue3';
 
 const props = defineProps({
     active: Boolean,
-    href: String,
     as: String,
 });
 
@@ -16,13 +15,7 @@ const classes = computed(() => {
 </script>
 
 <template>
-    <div>
-        <button v-if="as == 'button'" :class="classes" class="w-full text-left">
-            <slot />
-        </button>
-
-        <Link v-else :href="href" :class="classes" class="text-center">
-            <slot />
-        </Link>
-    </div>
+    <button :class="classes" @click="$emit('click')">
+        <slot />
+    </button>
 </template>

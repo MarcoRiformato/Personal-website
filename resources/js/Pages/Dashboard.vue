@@ -24,7 +24,9 @@
                       <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-secondary">{{ feature.name }}</h3>
                       <p class="mt-5 text-base leading-7">{{ feature.description }}</p>
                       <p class="mt-6">
-                        <a :href="feature.href" class="text-sm font-semibold leading-6 text-primary">Scopri di più <span aria-hidden="true">→</span></a>
+                        <button @click="scrollToSection(feature.href)" class="text-sm font-semibold leading-6 text-primary cursor-pointer">
+                          Scopri di più <span aria-hidden="true">→</span>
+                        </button>
                       </p>
                   </div>
                   </div>
@@ -82,7 +84,7 @@
         <ul role="list" class="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
           <li v-for="person in people" :key="person.name" class="flex flex-col gap-10 pt-12 sm:flex-row">
             <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" :src="person.imageUrl" alt="" />
-            <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" :src="person.imageUrl" alt="" />
+            <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="pc.jpg" alt="" />
             <div class="max-w-xl flex-auto">
               <h3 class="text-lg font-semibold leading-8 tracking-tight text-secondary">{{ person.name }}</h3>
               <p class="text-base leading-7 ">{{ person.role }}</p>
@@ -112,6 +114,7 @@
   </div>
   
   <!-- Sviluppo web -->
+  <div  id="sviluppo"/>
   <div class="mt-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
       <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
@@ -139,13 +142,13 @@
       </div>
   </div>
   
-  <!-- CTA -->
+  <!-- CTA Sviluppo-->
   <div class="-mt-20 mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
     <div class="relative isolate overflow-hidden bg-primary-content px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Dacci 100 giorni. Sei pronto?</h2>
+      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Rivoluziona la tua presenza online. <br/>Siti su misura per studi legali innovatori </h2>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="#" class="btn btn-primary">Sono pronto</a>
-        <a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>
+        <a href="#" class="btn btn-primary">Cominciamo</a>
+        <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
       </div>
       <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
@@ -160,7 +163,7 @@
   </div>
   
   <!-- SEO -->
-  <div class="lg:-mt-14 mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
+  <div id="seo" class="lg:-mt-14 mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
       <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
           <div class="lg:row-start-2 lg:max-w-md">
@@ -187,8 +190,28 @@
       </div>
   </div>
 
+  <!-- CTA Sviluppo-->
+  <div class="-mt-20 mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
+    <div class="relative isolate overflow-hidden bg-primary-content px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Aumenta la visibilità del tuo sito.<br/>Compari per primo nelle riceche Google </h2>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="#" class="btn btn-primary">Cominciamo</a>
+        <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
+      </div>
+      <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+        <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
+        <defs>
+          <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+            <stop stop-color="#7775D6" />
+            <stop offset="1" stop-color="#E935C1" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+
   <!-- CRO -->
-  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
+  <div id="cro" class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
       <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
           <div class="lg:row-start-2 lg:max-w-md">
@@ -213,6 +236,26 @@
           <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
         </div>
       </div>
+  </div>
+
+  <!-- CTA Sviluppo-->
+  <div class="-mt-20 mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
+    <div class="relative isolate overflow-hidden bg-primary-content px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Capitalizza il traffico del tuo sito.<br/>Converti visitatori in clienti</h2>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="#" class="btn btn-primary">Cominciamo</a>
+        <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
+      </div>
+      <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+        <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
+        <defs>
+          <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+            <stop stop-color="#7775D6" />
+            <stop offset="1" stop-color="#E935C1" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
   </div>
 
   <!-- Testimonial 
@@ -250,7 +293,7 @@
     id="faq"
     class="-mt-20 mx-auto max-w-7xl px-6 sm:py-32 lg:px-8 ">
       <div class="mx-auto max-w-4xl divide-y divide-white/10">
-        <h2 class="text-2xl font-bold leading-10 text-primary tracking-tight">Frequently asked questions</h2>
+        <h2 class="text-2xl font-bold leading-10 text-primary tracking-tight">FAQ</h2>
         <dl class="mt-10 space-y-6 divide-y divide-white/10">
           <Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="pt-6" v-slot="{ open }">
             <dt>
@@ -282,22 +325,31 @@
   import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
   import { MinusSmallIcon, PlusSmallIcon, ArrowPathIcon, GlobeEuropeAfricaIcon, MagnifyingGlassIcon, CursorArrowRaysIcon
  } from '@heroicons/vue/24/outline'
-  
+
+ const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
   const features = [
     {
       name: 'Siti Web Professionali',
       description: 'Un sito web su misura per studi legali, progettato per rispondere alle esigenze dei vostri clienti e riflettere la professionalità del vostro team.',
-      icon: GlobeEuropeAfricaIcon
-,
+      href: 'sviluppo',
+      icon: GlobeEuropeAfricaIcon,
     },
     {
       name: 'Maggiore visibilità nelle ricerce Google (SEO)',
       description: 'Aumenta la visibilità del tuo studio legale nei motori di ricerca. Attrai clienti ideali grazie a tecniche SEO avanzate e contenuti ottimizzati.',
+      href: 'seo',
       icon: MagnifyingGlassIcon,
     },
     {
       name: 'Converti Visitatori in Clienti',
       description: 'Ottimizza la tua presenza online e trasforma i visitatori in clienti fedeli. Approcci basati su dati per garantire risultati misurabili.',
+      href: 'cro',
       icon: CursorArrowRaysIcon,
     },
   ]
@@ -307,7 +359,7 @@
       name: 'Marco Riformato',
       role: '',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        'rifo.jpg',
       bio: 'Nato e cresciuto tra l\'isola d\'Elba e Firenze, sono uno sviluppatore da diversi anni. Il mio obiettivo principale è aiutare le aziende legali in Italia a crescere e prosperare online. Con le mie competenze in sviluppo, SEO e CRO, mi impegno a offrire soluzioni su misura che generano risultati concreti. Se sei alla ricerca di un esperto che capisce le sfide uniche del settore legale e sa come superarle, sono qui per te. Facciamo crescere insieme la tua presenza online!',
       twitterUrl: '#',
       linkedinUrl: '#',
@@ -377,31 +429,6 @@
   
   const faqs = [
     {
-      question: "Di cosa ti occupi?",
-      answer:
-        "Sono specializzato in sviluppo, SEO, ottimizzazione vendite e marketing per gli studi legali",
-    },
-    {
-      question: "Quanto tempo ci vuole per vedere i risultati?",
-  
-      answer: "Dipende dal servizio: un nuovo sito web può garantire risultati in poche settimane, mentre la ottimizzazione SEO e CRO può richiedere diversi mesi."
-    },
-    {
-      question: "Avete una tabella prezzi?",
-  
-      answer: "La nostra prima priorità è portare dei risultati. Per questo motivo possiamo comunicare una stima di prezzo solamente dopo una prima chiamata conoscitiva"
-    },
-    {
-      question: "Offrite supporto post-vendita?",
-  
-      answer: "Non svilupperò un sito per lasciarti con le mani in mano. Il percorso prevede un affiancamento e assistenza continua, in base al tipo di abbonamento scelto"
-    },
-    {
-      question: "Posso fare modifiche al sito una volta terminato?",
-  
-      answer: "Certamente! Seppure nel nostro pacchetto è anche inclusa la creazione di articoli e aggiornamenti continui, crediamo sia importante darti la possibilità di poter modificare liberamente il tuo sito."
-    },
-    {
       question: "Cos'è la SEO?",
   
       answer: "La Search Engine Optimization consiste nella pratica di ottimizzare ed aggiornare un sito di modo che risulti più in alto nelle ricerche di Google. "
@@ -410,6 +437,21 @@
       question: "Cos'è la CRO?",
   
       answer: "La Convertion Rate Optimization, ovvero Ottimizzazione del tasso di conversione, consiste nello studio ed evoluzione continua di un sito per fare in modo di raggiungere l obbiettivo (più tempo passato sulla pagina, scaricare un contenuto per ottenere l indirizzo email,)"
+    },
+    {
+      question: "Quanto tempo ci vuole per vedere i risultati?",
+  
+      answer: "Dipende dal servizio: un nuovo sito web può garantire risultati in poche settimane, mentre la ottimizzazione SEO e CRO può richiedere diversi mesi. Non voglio illuderti con risultati immediati, preferisco una promessa in meno ed un risultato in più"
+    },
+    {
+      question: "Avete una tabella prezzi?",
+  
+      answer: "La mia prima priorità è portare dei risultati. Per questo motivo posso comunicare una stima di prezzo solamente dopo una prima chiamata conoscitiva"
+    },
+    {
+      question: "Offri supporto post-vendita?",
+  
+      answer: "Non svilupperò un sito per poi abbandonarti. Il percorso prevede un affiancamento e assistenza continua, in base al tipo di contratto stabilito"
     }
   ]
   

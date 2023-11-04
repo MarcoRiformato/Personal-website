@@ -67,6 +67,7 @@ const scrollToSection = (sectionId) => {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 };
+
 </script>
 
 <template>
@@ -90,13 +91,17 @@ const scrollToSection = (sectionId) => {
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <NavLink @click="scrollToSection('servizi')" :active="route().current('services')">
+                    <NavLink
+                        @click="scrollToSection('sviluppo')"
+                        >
                         Voglio un nuovo sito
                     </NavLink>
-                    <NavLink @click="scrollToSection('servizi')" :active="route().current('services')">
+                    <NavLink
+                        @click="scrollToSection('seo')">
                         Voglio aumentare la visibilità del mio sito
                     </NavLink>
-                    <NavLink @click="scrollToSection('servizi')" :active="route().current('services')">
+                    <NavLink
+                        @click="scrollToSection('cro')">
                         Voglio trasformare i visitatori in clienti
                     </NavLink>
                     <NavLink 
@@ -105,7 +110,6 @@ const scrollToSection = (sectionId) => {
                         :active="route().current('book')">
                         Parliamo ➡️
                     </NavLink>
-
                 </div>
             </div>
 
@@ -188,12 +192,17 @@ const scrollToSection = (sectionId) => {
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
         <div class="pt-2 pb-3 space-y-1 flex flex-col items-center">
-            <ResponsiveNavLink @click="scrollToSection('servizi')">
-                Servizi
-            </ResponsiveNavLink><!--
-            <ResponsiveNavLink @click="scrollToSection('testimonials')">
-                Testimonianze
-            </ResponsiveNavLink>-->
+            <ResponsiveNavLink
+            @click="scrollToSection('sviluppo')"
+            >
+                Voglio un nuovo sito web
+            </ResponsiveNavLink>
+            <ResponsiveNavLink @click="scrollToSection('seo')">
+                Voglio aumentare la visibilità del mio sito
+            </ResponsiveNavLink>
+            <ResponsiveNavLink @click="scrollToSection('cro')">
+                Voglio trasformare i visitatori in clienti
+            </ResponsiveNavLink>
             <ResponsiveNavLink :href="route('book')">
                 Prenota
             </ResponsiveNavLink>
