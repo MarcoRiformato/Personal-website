@@ -116,8 +116,8 @@
       <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
           <div class="lg:row-start-2 lg:max-w-md">
-            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Non siamo i soliti sviluppatori di siti<br /></h2>
-            <p class="mt-6 text-lg leading-8">Vi è la credenza che un sito serva solamente per farsi trovare su internet. In realtà, può essere uno strumento potente che ti permette di risparmiare tempo ed aprirti un mondo di nuove opportunità</p>
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Sviluppo Web Su Misura<br /></h2>
+            <p class="mt-6 text-lg leading-8">Eleva la presenza online del tuo studio legale con soluzioni web personalizzate, gestione autonoma dei contenuti e sistemi di prenotazione avanzati per massimizzare l'efficienza e l'impatto sul cliente.</p>
           </div>
           <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none" width="2432" height="1442" />
           <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
@@ -159,7 +159,63 @@
     </div>
   </div>
   
-    <!-- Testimonial 
+  <!-- SEO -->
+  <div class="lg:-mt-14 mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
+      <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
+          <div class="lg:row-start-2 lg:max-w-md">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Aumenta la Visibilità Online<br /></h2>
+            <p class="mt-6 text-lg leading-8">Aumenta la visibilità online del tuo studio legale. Con analisi approfondite, contenuti mirati e una strategia locale, faremo scalare il tuo studio legale nelle ricerche Google.</p>
+          </div>
+          <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none" width="2432" height="1442" />
+          <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
+            <dl class="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
+              <div v-for="seo in seos" :key="seo.name" class="relative">
+                <dt class="ml-9 inline-block font-semibold">
+                  <component :is="seo.icon" class="absolute left-1 top-1 h-5 w-5 text-primary" aria-hidden="true" />
+                  <p class="text-secondary">{{ seo.name }}</p>
+                </dt>
+                {{ ' ' }}<br />
+                <dd class="inline">{{ seo.description }}</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div class="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu" aria-hidden="true">
+          <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+        </div>
+      </div>
+  </div>
+
+  <!-- CRO -->
+  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
+      <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
+          <div class="lg:row-start-2 lg:max-w-md">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Conversione: Il Tocco Finale alla tua presenza online<br /></h2>
+            <p class="mt-6 text-lg leading-8">Dopo aver costruito un sito web di qualità e assicurato la sua visibilità con un'efficace strategia SEO, è cruciale capitalizzare quel traffico. La nostra Ottimizzazione delle Conversioni si focalizza su questo obiettivo: far sì che ogni visita si converta in un nuovo cliente </p>
+          </div>
+          <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none" width="2432" height="1442" />
+          <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
+            <dl class="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
+              <div v-for="cro in cros" :key="cro.name" class="relative">
+                <dt class="ml-9 inline-block font-semibold">
+                  <component :is="cro.icon" class="absolute left-1 top-1 h-5 w-5 text-primary" aria-hidden="true" />
+                  <p class="text-secondary">{{ cro.name }}</p>
+                </dt>
+                {{ ' ' }}<br />
+                <dd class="inline">{{ cro.description }}</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div class="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu" aria-hidden="true">
+          <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+        </div>
+      </div>
+  </div>
+
+  <!-- Testimonial 
     <div 
     id="testimonials"
     class="pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
@@ -272,6 +328,42 @@
   {
   name: 'Sviluppo su misura',
   description: 'Oltre la metà della ricerche oggi avviene dal cellulare, per questo offriamo design ottimizzati per dispositivi mobili. Costruiamo il sito da zero, evitando template standard che rallentano e omologano il web. Questo assicura un\'identità digitale unica per il tuo studio e una rapidità essenziale per mantenere gli utenti interessati. Ogni dettaglio è pensato per un\'esperienza d\'uso fluida e piacevole',
+  icon: CloudArrowUpIcon,
+  }
+  ]
+
+  const seos = [
+  {
+  name: 'Analisi Situazionale e Piano d\'Azione',
+  description: 'Comprendiamo il punto di partenza e gli obiettivi specifici del tuo studio legale per sviluppare un piano SEO personalizzato e pratico. Il nostro approccio mira a tracciare una strada chiara verso la visibilità online e il raggiungimento dei tuoi traguardi commerciali',
+  icon: CloudArrowUpIcon,
+  },
+  {
+  name: 'Strategia di Contenuto e Ottimizzazione Keyword',
+  description: 'Elaboriamo una strategia di contenuti focalizzata e una ricerca approfondita delle parole chiave per posizionarti come punto di riferimento nel settore legale. Attraverso contenuti ottimizzati, miriamo a migliorare il tuo ranking sui motori di ricerca e ad attrarre un pubblico qualificato sul tuo sito.',
+  icon: LockClosedIcon,
+  },
+  {
+  name: 'SEO Locale per la Visibilità nell\'Area di Competenza',
+  description: 'Assicuriamo che il tuo studio legale emerga nelle ricerche locali, dove potenziali clienti cercano i servizi che offri. La nostra strategia SEO locale è progettata per aumentare la tua presenza nelle ricerche geografiche pertinenti, portando a un maggior numero di contatti e consulenze.',
+  icon: CloudArrowUpIcon,
+  }
+  ]
+
+  const cros = [
+  {
+  name: 'Massimizza le Conversioni del Tuo Sito Attuale',
+  description: 'Se hai già un sito web, analizziamo in profondità la tua presenza online per scoprire come incrementare le conversioni. Riceverai un report con strategie concrete per trasformare i visitatori in clienti, pronto per essere implementato dalla tua attuale agenzia.',
+  icon: CloudArrowUpIcon,
+  },
+  {
+  name: 'Sviluppo Web su Misura per la Tua Crescita',
+  description: 'Se ci affidi la creazione del tuo nuovo sito, lo progetteremo per massimizzare le conversioni fin dall\'inizio. Questo significa che implementeremo strumenti come test A/B, tracciamento del mouse, registrazione delle sessioni e chiediamo feedback ai tuoi visitatori. Inoltre, il tuo sito sarà in costante evoluzione, adattandosi alle preferenze dei tuoi clienti e alle nuove tendenze di mercato. L\'obiettivo è avere un sito web che funziona bene e porta risultati sempre.',
+  icon: LockClosedIcon,
+  },
+  {
+  name: 'Supporto Strategico e Monitoraggio Costante',
+  description: 'Ogni mese, riceverai report dettagliati sulle prestazioni del tuo sito e del tuo settore di competenza, offrendoti una visione chiara di come stai andando e dove puoi migliorare. Inoltre, manteniamo una comunicazione regolare con chiamate settimanali per discutere strategie e feedback. Questo approccio integrato ti fornisce supporto in tempo reale e ti tiene sempre un passo avanti rispetto alla concorrenza.',
   icon: CloudArrowUpIcon,
   }
   ]
