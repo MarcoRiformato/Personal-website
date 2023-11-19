@@ -1,9 +1,10 @@
 <script setup>
 import { defineProps, computed } from 'vue';
+import { Link } from '@inertiajs/vue3';
 
 const props = defineProps({
     active: Boolean,
-    // Remove the href prop if you're not using it for actual navigation
+    href: String
 });
 
 const classes = computed(() => {
@@ -14,7 +15,7 @@ const classes = computed(() => {
 </script>
 
 <template>
-    <button :class="classes" @click="$emit('click')">
+    <Link :href="href" :class="classes">
         <slot />
-    </button>
+    </Link>
 </template>

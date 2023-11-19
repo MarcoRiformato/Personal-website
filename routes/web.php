@@ -41,3 +41,15 @@ Route::get('/dashboard', function () {
 })->name('dashboard'); 
 
 Route::get('/prenota', [BookingsController::class, 'Book'])->name('book');
+
+Route::get('/sviluppo', function () {
+    return Inertia::render('Sviluppo');
+})->name('sviluppo');
+
+Route::get('/seo', function () {
+    return Inertia::render('Seo');
+})->name('seo');
+
+Route::get('/cro', function () {
+    return Inertia::render('Cro');
+})->name('cro');

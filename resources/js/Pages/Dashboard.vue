@@ -116,38 +116,33 @@
   </div>
   
   <!-- Sviluppo web -->
-  <div  id="sviluppo"/>
-  <div class="mt-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
-      <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
-          <div class="lg:row-start-2 lg:max-w-md">
-            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Sviluppo Web Su Misura<br /></h2>
-            <p class="mt-6 text-lg leading-8">Eleva la presenza online del tuo studio legale con soluzioni web personalizzate, gestione autonoma dei contenuti e sistemi di prenotazione avanzati per massimizzare l'efficienza e l'impatto sul cliente.</p>
-          </div>
-          <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none" width="2432" height="1442" />
-          <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
-            <dl class="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
-              <div v-for="sviluppo in sviluppi" :key="sviluppo.name" class="relative">
-                <dt class="ml-9 inline-block font-semibold">
-                  <component :is="sviluppo.icon" class="absolute left-1 top-1 h-5 w-5 text-primary" aria-hidden="true" />
-                  <p class="text-secondary">{{ sviluppo.name }}</p>
-                </dt>
-                {{ ' ' }}<br />
-                <dd class="inline">{{ sviluppo.description }}</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-        <div class="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu" aria-hidden="true">
-          <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
-        </div>
+  <div  id="sviluppo" class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-4" />
+  <div class="mt-10 relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Sviluppo Web Su Misura</h2>
       </div>
-  </div>
-  
-  <!-- CTA Sviluppo-->
-  <div class="-mt-20 mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
-    <div class="relative isolate overflow-hidden bg-primary-content px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Rivoluziona la tua presenza online. <br/>Siti su misura per studi legali innovatori </h2>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-10 lg:max-w-none">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+          <div v-for="sviluppo in sviluppi" :key="sviluppo.name" class="flex flex-col">
+            <dt class="text-base font-semibold leading-7 text-white">
+              <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-info">
+                <component :is="sviluppo.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+              <p class="text-secondary">{{ sviluppo.name }}</p>
+            </dt>
+            <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+              <p class="flex-auto">{{ sviluppo.description }}</p>
+              <p class="mt-6">
+                <a href="#" @click.prevent="$inertia.visit(route('sviluppo'))" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+              </p>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div class="mt-5 relative isolate overflow-hidden bg-secondary-content px-6 py-12 text-center shadow-2xl rounded-3xl sm:px-16">
+      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Rivoluziona la tua presenza online.</h2>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a href="#" class="btn btn-primary"  @click.prevent="openCalendlyPopup">Cominciamo</a>
         <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
@@ -165,37 +160,33 @@
   </div>
   
   <!-- SEO -->
-  <div id="seo" class="lg:-mt-14 mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
-      <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
-          <div class="lg:row-start-2 lg:max-w-md">
-            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Aumenta la Visibilità Online<br /></h2>
-            <p class="mt-6 text-lg leading-8">Aumenta la visibilità online del tuo studio legale. Con analisi approfondite, contenuti mirati e una strategia locale, faremo scalare il tuo studio legale nelle ricerche Google.</p>
-          </div>
-          <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none" width="2432" height="1442" />
-          <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
-            <dl class="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
-              <div v-for="seo in seos" :key="seo.name" class="relative">
-                <dt class="ml-9 inline-block font-semibold">
-                  <component :is="seo.icon" class="absolute left-1 top-1 h-5 w-5 text-primary" aria-hidden="true" />
-                  <p class="text-secondary">{{ seo.name }}</p>
-                </dt>
-                {{ ' ' }}<br />
-                <dd class="inline">{{ seo.description }}</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-        <div class="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu" aria-hidden="true">
-          <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
-        </div>
+  <div id="seo" class=" mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
+    <div class="mt-10 relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Aumenta la Visibilità Online</h2>
       </div>
-  </div>
-
-  <!-- CTA Sviluppo-->
-  <div class="-mt-20 mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
-    <div class="relative isolate overflow-hidden bg-primary-content px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Aumenta la visibilità del tuo sito.<br/>Compari per primo nelle riceche Google </h2>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-10 lg:max-w-none">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+          <div v-for="seo in seos" :key="seo.name" class="flex flex-col">
+            <dt class="text-base font-semibold leading-7 text-white">
+              <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-info">
+                <component :is="seo.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+              <p class="text-secondary">{{ seo.name }}</p>
+            </dt>
+            <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+              <p class="flex-auto">{{ seo.description }}</p>
+              <p class="mt-6">
+                <a href="#" @click.prevent="$inertia.visit(route('seo'))" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+              </p>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div class="mt-5 relative isolate overflow-hidden bg-secondary-content px-6 py-12 text-center shadow-2xl rounded-3xl sm:px-16">
+      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Rivoluziona la tua presenza online.</h2>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a href="#" class="btn btn-primary"  @click.prevent="openCalendlyPopup">Cominciamo</a>
         <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
@@ -210,40 +201,37 @@
         </defs>
       </svg>
     </div>
+  </div>
   </div>
 
   <!-- CRO -->
   <div id="cro" class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
-      <div class="relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
-          <div class="lg:row-start-2 lg:max-w-md">
-            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Conversione: Il Tocco Finale alla tua presenza online<br /></h2>
-            <p class="mt-6 text-lg leading-8">Dopo aver costruito un sito web di qualità e assicurato la sua visibilità con un'efficace strategia SEO, è cruciale capitalizzare quel traffico. La nostra Ottimizzazione delle Conversioni si focalizza su questo obiettivo: far sì che ogni visita si converta in un nuovo cliente </p>
-          </div>
-          <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none" width="2432" height="1442" />
-          <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
-            <dl class="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
-              <div v-for="cro in cros" :key="cro.name" class="relative">
-                <dt class="ml-9 inline-block font-semibold">
-                  <component :is="cro.icon" class="absolute left-1 top-1 h-5 w-5 text-primary" aria-hidden="true" />
-                  <p class="text-secondary">{{ cro.name }}</p>
-                </dt>
-                {{ ' ' }}<br />
-                <dd class="inline">{{ cro.description }}</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-        <div class="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu" aria-hidden="true">
-          <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
-        </div>
+    <div class="mt-10 relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Conversione: Il Tocco Finale alla tua presenza online</h2>
       </div>
-  </div>
-
-  <!-- CTA Sviluppo-->
-  <div class="-mt-20 mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
-    <div class="relative isolate overflow-hidden bg-primary-content px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Capitalizza il traffico del tuo sito.<br/>Converti visitatori in clienti</h2>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-10 lg:max-w-none">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+          <div v-for="cro in cros" :key="cro.name" class="flex flex-col">
+            <dt class="text-base font-semibold leading-7 text-white">
+              <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-info">
+                <component :is="cro.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+              <p class="text-secondary">{{ cro.name }}</p>
+            </dt>
+            <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+              <p class="flex-auto">{{ cro.description }}</p>
+              <p class="mt-6">
+                <a href="#" @click.prevent="$inertia.visit(route('cro'))" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+              </p>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div class="mt-5 relative isolate overflow-hidden bg-secondary-content px-6 py-12 text-center shadow-2xl rounded-3xl sm:px-16">
+      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Rivoluziona la tua presenza online.</h2>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a href="#" class="btn btn-primary"  @click.prevent="openCalendlyPopup">Cominciamo</a>
         <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
@@ -258,6 +246,7 @@
         </defs>
       </svg>
     </div>
+  </div>
   </div>
 
   <!-- Testimonial 
@@ -375,6 +364,11 @@
   
   const sviluppi = [
   {
+  name: 'Design su misura',
+  description: 'Oltre la metà della ricerche oggi avviene dal cellulare, per questo offriamo design ottimizzati per dispositivi mobili. Ogni dettaglio è pensato per un\'esperienza d\'uso fluida e piacevole',
+  icon: CloudArrowUpIcon,
+  },
+  {
   name: 'Gestionale CMS integrato',
   description: 'Seppure offriamo dei servizi di creazione contenuti nei nostri pacchetti SEO e CRO, avrai comunque la possibilità di gestire facilmente i contenuti del tuo sito con un sistema CMS integrato. Crea e modifica articoli, servizi e altro in libertà, senza complicazioni.',
   icon: CloudArrowUpIcon,
@@ -383,11 +377,6 @@
   name: 'Sistema di prenotazione online',
   description: 'Vogliamo aiutarti a risparmiare tempo. Il sistema di prenotazione ti darà modo di riservare una finestra oraria da te decisa, durante la quale clienti e potenziali clienti potranno fissare una chiamata. Niente più chiamate dell\' ultimo momento o messaggi su whatsapp per chiedere aggiornamenti.',
   icon: LockClosedIcon,
-  },
-  {
-  name: 'Sviluppo su misura',
-  description: 'Oltre la metà della ricerche oggi avviene dal cellulare, per questo offriamo design ottimizzati per dispositivi mobili. Costruiamo il sito da zero, evitando template standard che rallentano e omologano il web. Questo assicura un\'identità digitale unica per il tuo studio e una rapidità essenziale per mantenere gli utenti interessati. Ogni dettaglio è pensato per un\'esperienza d\'uso fluida e piacevole',
-  icon: CloudArrowUpIcon,
   }
   ]
 

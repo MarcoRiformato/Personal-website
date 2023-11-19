@@ -95,16 +95,16 @@ function openCalendlyPopup(event) {
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <NavLink
-                        @click="scrollToSection('sviluppo')"
+                    :href="route('sviluppo')"
                         >
                         Voglio un nuovo sito
                     </NavLink>
                     <NavLink
-                        @click="scrollToSection('seo')">
+                    :href="route('seo')">
                         Voglio aumentare la visibilità del mio sito
                     </NavLink>
                     <NavLink
-                        @click="scrollToSection('cro')">
+                    :href="route('cro')">
                         Voglio trasformare i visitatori in clienti
                     </NavLink>
                     <a as="button" class="mt-2 btn btn-primary" href="#" @click.prevent="openCalendlyPopup">Parliamo</a>
