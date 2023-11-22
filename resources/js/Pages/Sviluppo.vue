@@ -2,14 +2,14 @@
 <AppLayout title="Sviluppo">
 
 <!--Sviluppo su misura-->
-<div class="overflow-hidden bg-secondary-content pt-4">
+<div class="overflow-hidden bg-secondary-content pt-4 py-4">
 <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
     <div class="lg:ml-auto lg:pl-4 lg:pt-4">
         <div class="lg:max-w-lg">
         <h2 class="text-base font-semibold leading-7 text-secondary">Primo step</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">Sviluppo su misura</p>
-        <p class="mt-6 text-lg leading-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+        <p class="mt-6 text-lg leading-8">Creerò il vostro brand distintivo e il posizionamento online, sviluppando in 100 giorni un sito web veloce e mobile-friendly. Post consegna, offrirò aggiornamenti continui per testi e immagini, garantendo al vostro sito dinamicità e attualità.</p>
         <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
             <div v-for="primo in primos" :key="primo.name" class="relative pl-9">
             <dt class="inline font-semibold">
@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="flex items-start justify-end lg:order-first">
-        <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" width="2432" height="1442" />
+        <img src="svil0.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" width="2432" height="1442" />
     </div>
     </div>
 </div>
@@ -50,19 +50,19 @@
 </div>
 
 <!--Gestionale contenuti-->
-<div class="overflow-hidden bg-secondary-content pt-8">
+<div class="overflow-hidden bg-secondary-content pt-8 py-4">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div class="lg:pr-8 lg:pt-4">
           <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 text-indigo-400">Deploy faster</h2>
+            <h2 class="text-base font-semibold leading-7 text-indigo-400">Secondo step</h2>
             <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Gestionale contenuti compreso</p>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Articoli. Casi studio. Ti daremo tutti gli strumenti per poter scrivere e modifcare i contenuti in completa autonomia.</p>
+            <p class="mt-6 text-lg leading-8 text-gray-300">Potenziate la vostra reputazione legale con studi di caso che dimostrano il vostro successo, presentate i vostri servizi in modo chiaro e attirate l'attenzione con articoli che attestano la vostra autorità nel settore. Gestite in autonomia i contenuti o, se preferite, lasciate che mi occupi di tutto con il servizio di scrittura 'Done For You'.</p>
             <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
               <div v-for="secondo in secondos" :key="secondo.name" class="relative pl-9">
                 <dt class="inline font-semibold text-white">
                   <component :is="secondo.icon" class="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
-                  {{ secondo.name }}
+                  {{ secondo.name }}<br/>
                 </dt>
                 {{ ' ' }}
                 <dd class="inline">{{ secondo.description }}</dd>
@@ -70,7 +70,7 @@
             </dl>
           </div>
         </div>
-        <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
+        <img src="svil1.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
       </div>
     </div>
 </div>
@@ -101,7 +101,7 @@
       <div class="mx-auto max-w-2xl sm:text-center">
         <h2 class="text-base font-semibold leading-7 text-indigo-400">Risparmia tempo prezioso</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Sistema di prenotazione chiamate automatizzato</p>
-        <p class="mt-6 text-lg leading-8 text-gray-300">Hai solamente 2 ore al giorno libere per ricevere chiamate? Nessun problema, daremo ai tuoi clienti un sistema semplice ed intuitivo per prenotarsi esclusivamente in tale finestra oraria</p>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Hai solamente 2 ore al giorno libere per ricevere chiamate? Nessun problema, daremo ai tuoi clienti un sistema semplice ed intuitivo per prenotarsi esclusivamente quando lo vorrai tu</p>
       </div>
     </div>
     <div class="relative overflow-hidden pt-16">
@@ -162,20 +162,20 @@ const primos = [
 
 const secondos = [
   {
-    name: 'Casi studio e articoli, cosa sono?',
+    name: 'Casi studio, servizi e articoli, cosa sono?',
     description:
-      'Che tu voglia dimostrare la tua autorevolezza nel settore legale, oppure condividere le vostre abilità con un caso studio,potrai farlo con la creazione di casi studio ed articoli.',
+      'La strategia che andremo ad applicare ha più strumenti. I casi studio sono delle documentazioni su qualche caso legale che avete vinto, di modo da poter mostrare la vostra capacità nel settore. I servizi, invece, è dove potremo esporre i vostri servizi al pubblico. Infine, gli articoli mostreranno ai visitatori che siete una voce autorevole nel mondo legale',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'Servizio di scrittura contenuti',
-    description: 'Se',
-    icon: ServerIcon,
+    name: 'Gestione autonoma',
+    description: 'Non ci sarà bisogno di chiedere password o aspettare una nostra risposta. Potrai creare, modificare ed eliminare articoli, servizi o casi studio in completa autonomia',
+    icon: LockClosedIcon,
   },
   {
-    name: 'Gestione autonoma',
-    description: 'Non ci sarà bisogno di chiedere password o aspettare una nostra risposta. Potrai creare, modificare ed eliminare articoli o casi studio in completa autonomia',
-    icon: LockClosedIcon,
+    name: 'Servizio di scrittura contenuti - Done For You',
+    description: 'Se richiesto, posso anche occuparmi della creazione contenuti per te. In base al tuo obbiettivo o priorità, concorderemo insieme la frequenza e gli argomenti. In questo modo, avrai un sito  web autorevole e sempre aggiornato, ma senza dovertene occupare direttamente',
+    icon: ServerIcon,
   }
 ]
 </script>

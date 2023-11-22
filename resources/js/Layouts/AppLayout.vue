@@ -94,20 +94,19 @@ function openCalendlyPopup(event) {
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <NavLink
-                    :href="route('sviluppo')"
-                        >
-                        Voglio un nuovo sito
+                    <NavLink :href="route('sviluppo')">
+                        <span class="default-text">Voglio un nuovo sito</span>
+                        <span class="alt-text hidden text-xs">Nuovo sito web</span>
                     </NavLink>
-                    <NavLink
-                    :href="route('seo')">
-                        Voglio aumentare la visibilità del mio sito
+                    <NavLink :href="route('seo')">
+                        <span class="default-text">Voglio maggiore visibilità sul mio sito</span>
+                        <span class="alt-text hidden text-xs">Aumentare visibilità</span>
                     </NavLink>
-                    <NavLink
-                    :href="route('cro')">
-                        Voglio trasformare i visitatori in clienti
+                    <NavLink :href="route('cro')">
+                        <span class="default-text">Voglio trasformare i visitatori in clienti</span>
+                        <span class="alt-text hidden text-xs">Convertire visitatori in clienti</span>
                     </NavLink>
-                    <a as="button" class="mt-2 btn btn-primary" href="#" @click.prevent="openCalendlyPopup">Parliamo</a>
+                    <a as="button" class="mt-2 btn btn-primary text-xs" href="#" @click.prevent="openCalendlyPopup">Parliamo</a>
                 </div>
             </div>
 
@@ -193,13 +192,13 @@ function openCalendlyPopup(event) {
             <ResponsiveNavLink
             @click="scrollToSection('sviluppo')"
             >
-                Voglio un nuovo sito web
+                Nuovo sito web
             </ResponsiveNavLink>
             <ResponsiveNavLink @click="scrollToSection('seo')">
-                Voglio aumentare la visibilità del mio sito
+                Aumentare visibilità
             </ResponsiveNavLink>
             <ResponsiveNavLink @click="scrollToSection('cro')">
-                Voglio trasformare i visitatori in clienti
+                Convertire visitatori in clienti
             </ResponsiveNavLink>
             <ResponsiveNavLink :href="route('book')">
                 Prenota
@@ -309,3 +308,16 @@ function openCalendlyPopup(event) {
 </footer>
 </div>
 </template>
+<style>
+/* Custom media query for the range between 1000px and 640px */
+@media screen and (min-width: 640px) and (max-width: 1060px) {
+  .default-text {
+    display: none; /* Hide the default text */
+  }
+  .alt-text {
+    display: block; /* Show the alternative text */
+  }
+}
+
+
+</style>

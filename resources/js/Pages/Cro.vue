@@ -9,7 +9,7 @@
         <div class="lg:max-w-lg">
         <!--<h2 class="text-base font-semibold leading-7 text-secondary">Primo step</h2>-->
         <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">Ottimizza le Conversioni del Tuo Sito Attuale</p>
-        <p class="mt-6 text-lg leading-8">Hai già un sito web e non vuoi cambiare?<br/>Nessun problema</p>
+        <p class="mt-6 text-lg leading-8">Hai già un sito web e non vuoi cambiare?<br/>Nessun problema: con un'analisi approfondita di CRO, evidenziamo punti di forza e aree di miglioramento del tuo sito. Riceverai un report chiaro e dettagliato, pronto per essere utilizzato dalla tua agenzia di sviluppo per ottimizzazioni immediate.</p>
         <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
             <div v-for="primo in primos" :key="primo.name" class="relative pl-9">
             <dt class="inline font-semibold">
@@ -55,8 +55,8 @@
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div class="lg:pr-8 lg:pt-4">
             <div class="lg:max-w-lg">
-            <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">Sviluppo web su misura per la tua crescita</p>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Vuoi un nuovo sito, sviluppato sin dall'inizio con la CRO e la SEO in mente? Affidati a noi</p>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">Sviluppo Web focalizzato sulle conversioni</p>
+            <p class="mt-6 text-lg leading-8 text-gray-300">Creiamo un nuovo sito ottimizzato per la CRO, applicando fin dall'inizio le migliori tecniche per massimizzare le conversioni. Utilizziamo analisi comportamentali come il tracciamento del mouse e A/B testing per capire come i visitatori interagiscono con il sito. Basandoci sui dati raccolti, modifichiamo ed evolviamo il sito per garantire un flusso costante di nuovi clienti.</p>
             <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                 <div v-for="secondo in secondos" :key="secondo.name" class="relative pl-9">
                 <dt class="inline font-semibold text-white">
@@ -100,8 +100,8 @@
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
     <div class="lg:ml-auto lg:pl-4 lg:pt-4">
         <div class="lg:max-w-lg">
-        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">Supporto Strategico e Monitoraggio globale</p>
-        <p class="mt-6 text-lg leading-8">Una volta che avrai avviato la collaborazione con noi, imarresaremomo sempre in contatto, per tenerti aggiornati sull'andamento della tua rivoluzione digitale</p>
+        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">Supporto costante</p>
+        <p class="mt-6 text-lg leading-8">Con videochiamate settimanali, fissiamo obiettivi di crescita per il tuo sito e, mensilmente, riceverai un report dettagliato sul suo andamento.</p>
         <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
             <div v-for="terzo in terzos" :key="terzo.name" class="relative pl-9">
             <dt class="inline font-semibold">
@@ -151,30 +151,30 @@ const primos = [
     {
     name: 'Analisi di Conversion Rate Optimization (CRO):',
     description:
-        'Faremo una approfondita analisi del tuo sito, studiando i punti di forza e debolezza',
+        'Faremo una approfondita analisi del tuo sito, studiando i punti di forza da evidenziare e debolezza, eventualmente da eliminare.',
     icon: CloudArrowUpIcon,
     },
     {
     name: 'Report pronto per la tua agenzia attuale',
-    description: 'Ti consegneremo un report dettagliato di consigli, segnalazioni e proposte di modifica. Potrai consegnarlo direttamente alla tua agenzia di sviluppo, che potrà applicarli',
+    description: 'Ti consegneremo un report dettagliato di consigli, segnalazioni e proposte di modifica. Potrai consegnarlo direttamente alla tua agenzia di sviluppo, che potrà applicarli senza problemi',
     icon: LockClosedIcon,
     }
 ]
 
 const secondos = [
     {
-    name: 'Sito CRO sin dall inizio',
+    name: 'Nuovo sito ottimizzato per la CRO',
     description:
-        'Applichiamo di predifinito tutte le strategie e convenzioni migliori in materia CRO. Questo ci darà più libertà di aiutarti',
+        'In base agli obbiettivi e priorità che concorderemo, applichiamo sin dal principio tutte le tecniche e convenzioni migliori in materia CRO. Questo ci darà modo di aiutarti meglio.',
     icon: CloudArrowUpIcon,
     },
     {
     name: 'Analisi comportamentale',
-    description: 'Tracciamento del mouse, registrazione delle sessioni, A/B testing. Tutte tecniche e strategie per poter raccogliere ed apprendere, con precisione, come i visitatori navighino il tuo sito',
+    description: 'Tracciamento del mouse, registrazione delle sessioni, A/B testing. Tutte strategie e strumenti per raccogliere ed apprendere, con precisione, come i visitatori navighino il tuo sito',
     icon: ServerIcon,
     },
     {
-    name: 'Evoluzione e adattamento continui',
+    name: 'Evoluzione continua',
     description: 'In base ai dati raccolti, alle tendenze di mercato ed agli obbiettivi stabiliti, modificheremo ed evolveremo gradualmente il sito web, di modo che possa garantire un fusso costante di nuovi clienti.',
     icon: LockClosedIcon,
     }
@@ -184,12 +184,12 @@ const terzos = [
     {
     name: 'Chiamate settimanali',
     description:
-        'Manterremo un contatto diretto tramite videochiamata 1:1, settimanale. Durante queste chiamate avremo modo di concordare e definire gli obbiettivi per ogni fase di crescita del tuo sito.',
+        'Manterremo un contatto diretto, tramite delle videochiamate settimanali. Durante questi incontri avremo modo di concordare e definire gli obbiettivi per ogni fase di crescita del tuo sito.',
     icon: CloudArrowUpIcon,
     },
     {
     name: 'Report mensile',
-    description: 'Ogni mese riceverai un report dettagliato sull andamento globale del tuo sito, che comprenderà i progressi SEO e CRO.',
+    description: 'Ogni mese riceverai un report dettagliato sull\' andamento globale del tuo sito, che comprenderà i progressi nelle classifiche di Google, le analisi comportamentali degli utenti, e tanto altro',
     icon: ServerIcon,
     }
 ]

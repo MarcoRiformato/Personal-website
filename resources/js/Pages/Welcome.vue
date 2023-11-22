@@ -20,7 +20,7 @@
             <p class="mt-6 text-lg leading-8">Esse id magna consectetur fugiat non dolor in ad laboris magna laborum ea consequat. Nisi irure aliquip nisi adipisicing veniam voluptate id. In veniam incididunt ex veniam adipisicing sit.</p>
             <div class="mt-10 flex items-center gap-x-6">
               <a href="#" class="btn btn-primary">Get started</a>
-              <a href="#" class="text-sm font-semibold leading-6">Learn more <span aria-hidden="true">→</span></a>
+              <a href="#" class="text-sm font-semibold leading-6">Scopri di più <span aria-hidden="true">→</span></a>
             </div>
           </div>
           <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">

@@ -9,7 +9,7 @@
         <div class="lg:max-w-lg">
         <!--<h2 class="text-base font-semibold leading-7 text-secondary">Primo step</h2>-->
         <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">Analisi e Piano d'Azione</p>
-        <p class="mt-6 text-lg leading-8">Scopri dove si trova attualmente il tuo studio legale nel vasto mondo digitale e dove potrebbe arrivare. Attraverso un'analisi dettagliata, stabiliremo un piano d'azione SEO personalizzato, orientato a costruire solide fondamenta per la vostra visibilità online, mirando a traguardi commerciali chiari e realistici.</p>
+        <p class="mt-6 text-lg leading-8">Con un audit SEO mirato, valutiamo la vostra presenza online per identificare miglioramenti strategici, e tramite l'analisi della concorrenza, scopriamo opportunità uniche per distinguervi e prosperare su Google.</p>
         <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
             <div v-for="primo in primos" :key="primo.name" class="relative pl-9">
             <dt class="inline font-semibold">
@@ -56,12 +56,12 @@
         <div class="lg:pr-8 lg:pt-4">
             <div class="lg:max-w-lg">
             <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Strategia di Contenuto e Ottimizzazione Keyword</p>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Creeremo contenuti che parlano direttamente al tuo pubblico target, utilizzando un'analisi approfondita delle parole chiave per posizionarvi come punto di riferimento autorevole nel settore legale. Con strategie di contenuto mirate e ottimizzazione SEO, migliorerò il tuo ranking sui motori di ricerca per attirare traffico qualificato verso il tuo sito.</p>
+            <p class="mt-6 text-lg leading-8 text-gray-300">Attraverso la ricerca di argomenti di nicchia, individuiamo parole chiave e tematiche che attirano clienti locali. Creiamo contenuti autorevoli per rafforzare la vostra visibilità. Con un'ottimizzazione continua, manteniamo il sito aggiornato e competitivo rispetto agli algoritmi di Google.</p>
             <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                 <div v-for="secondo in secondos" :key="secondo.name" class="relative pl-9">
                 <dt class="inline font-semibold text-white">
                     <component :is="secondo.icon" class="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
-                    {{ secondo.name }}
+                    {{ secondo.name }}<br/>
                 </dt>
                 {{ ' ' }}
                 <dd class="inline">{{ secondo.description }}</dd>
@@ -94,14 +94,14 @@
     </div>
 </div>
 
-<!--Creazione contenuti-->
+<!--GMB-->
 <div class="overflow-hidden bg-secondary-content pt-4 py-4">
 <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
     <div class="lg:ml-auto lg:pl-4 lg:pt-4">
         <div class="lg:max-w-lg">
-        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">Analisi e Piano d'Azione</p>
-        <p class="mt-6 text-lg leading-8">Assicurare che il vostro studio legale sia la prima scelta nella vostra area geografica è la mia priorità. Implementerò strategie SEO locali per distinguervi nella comunità, aumentando la vostra presenza nelle ricerche geografiche rilevanti e trasformando la visibilità in un maggior numero di contatti e consulenze</p>
+        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">Google My Business e SEO locale</p>
+        <p class="mt-6 text-lg leading-8">Ottimizzo la vostra scheda Google My Business per massimizzare la visibilità locale. Impiego strategie di link building per migliorare il ranking su Google e gestisco le recensioni online per rafforzare la vostra reputazione.</p>
         <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
             <div v-for="terzo in terzos" :key="terzo.name" class="relative pl-9">
             <dt class="inline font-semibold">
@@ -152,36 +152,31 @@ const primos = [
     {
     name: 'Audit SEO',
     description:
-        'Valutazione completa dell attuale presenza online dello studio legale e identificazione delle aree di miglioramento.',
+        'Valutazione completa dell attuale presenza online dello studio legale e identificazione delle aree di miglioramento, in base alle priorità e gli obbiettivi concordati',
     icon: CloudArrowUpIcon,
     },
     {
     name: 'Analisi della Concorrenza',
-    description: 'Studio delle strategie SEO dei competitor diretti e indiretti per identificare opportunità di differenziazione.',
+    description: 'Studio delle strategie SEO dei competitor diretti e indiretti per identificare opportunità di differenziazione e crescita nelle ricerche di Google',
     icon: LockClosedIcon,
-    },
-    {
-    name: 'Pianificazione degli Obiettivi',
-    description: 'Definizione di metriche di misura realistiche e misurabili basati sugli obiettivi commerciali dello studio legale.',
-    icon: ServerIcon,
-    },
+    }
 ]
 
 const secondos = [
     {
     name: 'Ricerca di argomenti di Nicchia',
     description:
-        'Individuazione di argomenti specifici e parole chiave di nicchia che attraggono clienti potenziali del luogo.',
+        'Individuazione di argomenti specifici e parole chiave di nicchia che attraggono potenziali clienti del luogo.',
     icon: CloudArrowUpIcon,
     },
     {
     name: 'Creazione di Contenuti',
-    description: 'Produzione di articoli di blog, pagine informative e casi studio per migliorare l engagement e la visibilità.',
+    description: 'Produzione di articoli, pagine informative, servizi e casi studio per ottenere maggiore visibilità ed autorevolezza nel settore.',
     icon: ServerIcon,
     },
     {
     name: 'Ottimizzazione continua',
-    description: 'Ogni anno, Google introduce diversi aggiornamenti alle proprie "regole" di ranking. Terremo il tuo sito sempre aggiornato ed all avanguardia',
+    description: 'Aggiorneremo costantemente il sito in risposta ai frequenti cambiamenti nelle regole di ranking di Google. Così facendo, ci assicureremo che il sito rimanga sempre competitivo e ben posizionato nei risultati di ricerca.',
     icon: LockClosedIcon,
     }
 ]
@@ -190,17 +185,17 @@ const terzos = [
     {
     name: 'Ottimizzazione Google My Business',
     description:
-        'Configurazione e ottimizzazione della scheda Google My Business per aumentare la visibilità nelle ricerche locali.',
+        'Una scheda Google My Business ottimizzata è fondamentale per comparire in alto alle ricerche di Google. Mi occuperò della sua inizializzazione, gestione ed evoluzione continua',
     icon: CloudArrowUpIcon,
     },
     {
     name: 'Link Building Locale',
-    description: 'Strategie per acquisire backlinks da siti locali autorevoli per migliorare la visibilità nelle ricerche geografiche',
+    description: 'Strategie per ottenere collegamenti dai siti locali influenti per aumentare la visibilità nelle ricerche specifiche per zona. I "backlinks" sono come dei riferimenti digitali da altri siti web. Quando un sito autorevole mette un link al tuo sito, è come ricevere un voto di fiducia. Questo aiuta a migliorare la tua posizione nei risultati di ricerca di Google, specialmente per le ricerche legate a una specifica località.',
     icon: ServerIcon,
     },
     {
     name: 'Recensioni e Reputation Management',
-    description: 'Monitoraggio e gestione delle recensioni online per migliorare la fiducia e l autorità locale dello studio legale.',
+    description: 'Gestione attenta delle recensioni online, sia positive che negative, per aumentare la fiducia e l\'autorità del tuo studio legale nella comunità locale. Monitorerò e risponderò alle recensioni per assicurare che riflettano positivamente la reputazione e la qualità dei servizi offerti dallo studio.',
     icon: LockClosedIcon,
     }
 ]
