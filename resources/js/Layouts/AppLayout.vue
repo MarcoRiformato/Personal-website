@@ -190,17 +190,26 @@ function openCalendlyPopup(event) {
     <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
         <div class="pt-2 pb-3 space-y-1 flex flex-col items-center">
             <ResponsiveNavLink
-            @click="scrollToSection('sviluppo')"
+            :href="route('sviluppo')"
             >
                 Nuovo sito web
             </ResponsiveNavLink>
-            <ResponsiveNavLink @click="scrollToSection('seo')">
+
+            <ResponsiveNavLink
+            :href="route('seo')"
+            >
                 Aumentare visibilità
             </ResponsiveNavLink>
-            <ResponsiveNavLink @click="scrollToSection('cro')">
+
+            <ResponsiveNavLink 
+            :href="route('cro')"
+            >
                 Convertire visitatori in clienti
             </ResponsiveNavLink>
-            <ResponsiveNavLink :href="route('book')">
+
+            <ResponsiveNavLink 
+            :href="route('book')"
+            >
                 Prenota
             </ResponsiveNavLink>
         </div>
@@ -297,13 +306,13 @@ function openCalendlyPopup(event) {
 </div>
 <footer class="bg-neutral -mt-12">
 <div class="mx-auto max-w-7xl -mt-30 overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-    <div class="mt-10 flex justify-center space-x-10">
-    <a v-for="item in navigation.social" :key="item.name" target="_blank" :href="item.href" class=" hover:text-gray-500">
+    <div class="lex justify-center space-x-10">
+    <!--<a v-for="item in navigation.social" :key="item.name" target="_blank" :href="item.href" class=" hover:text-gray-500">
         <span class="sr-only">{{ item.name }}</span>
         <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-    </a>
+    </a>-->
     </div>
-    <p class="mt-10 text-center text-xs leading-5 text-info">&copy; 2023 - Riformato Marco</p>
+    <p class="text-center text-xs leading-5 text-info">&copy; 2023 - Riformato Marco</p>
 </div>
 </footer>
 </div>

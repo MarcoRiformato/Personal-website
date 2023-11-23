@@ -22,8 +22,8 @@
         </dl>
         </div>
     </div>
-    <div class="flex items-start justify-end lg:order-first">
-        <img src="cro1.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" width="2432" height="1442" />
+    <div class="flex items-center justify-end lg:order-first">
+        <img src="cro1.png" alt="Product screenshot" class="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10" width="2432" height="1442" />
     </div>
     </div>
 </div>
@@ -35,7 +35,7 @@
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Svela il Potenziale del Tuo Studio Legale</h2>
     <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Scopri il potenziale di conversione inespresso del tuo sito legale. Ti daremo un report dettagliato con consigli, proposte e idee immediatamente applicabili dalla tua agenzia</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button href="#" class="btn btn-primary">Voglio un audit CRO del mio sito</button>
+        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Voglio un audit CRO del mio sito</button>
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
@@ -52,7 +52,7 @@
 <!--Analisi comportamentale-->
 <div class="overflow-hidden bg-secondary-content pt-4 py-4">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
         <div class="lg:pr-8 lg:pt-4">
             <div class="lg:max-w-lg">
             <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">Sviluppo Web focalizzato sulle conversioni</p>
@@ -69,7 +69,7 @@
             </dl>
             </div>
         </div>
-        <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
+        <img src="cro2.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 md:-ml-4 lg:-ml-0" width="2432" height="1442" />
         </div>
     </div>
 </div>
@@ -80,7 +80,7 @@
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Un nuovo sito.<br/> Ottimizzato sin dall'inizio per la CRO</h2>
     <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Un sito che cresce con te è la chiave per un business in espansione. Parti con il piede giusto con strumenti analitici avanzati e un design sempre in evoluzione.</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button href="#" class="btn btn-primary">Voglio un sito ottimizzato per le conversioni</button>
+        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Voglio un sito ottimizzato per le conversioni</button>
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
@@ -114,8 +114,8 @@
         </dl>
         </div>
     </div>
-    <div class="flex items-start justify-end lg:order-first">
-        <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" width="2432" height="1442" />
+    <div class="flex items-center justify-end lg:order-first">
+        <img src="cro3.png" alt="Product screenshot" class="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10" width="2432" height="1442" />
     </div>
     </div>
 </div>
@@ -127,7 +127,7 @@
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Supporto Strategico e Monitoraggio Costante</h2>
     <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Non lasciare nulla al caso. Con report mensili dettagliati e sessioni di supporto settimanali, sarai sempre protagonista della rivoluzione digitale del tuo studio</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button href="#" class="btn btn-primary">Voglio rivoluzionare il mio studio</button>
+        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Voglio rivoluzionare il mio studio</button>
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
@@ -146,7 +146,12 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
-    
+
+function openCalendlyPopup(event) {
+event.preventDefault();
+Calendly.initPopupWidget({ url: 'https://calendly.com/marco-riformato/incontro-di-valutazione' });
+}
+
 const primos = [
     {
     name: 'Analisi di Conversion Rate Optimization (CRO):',

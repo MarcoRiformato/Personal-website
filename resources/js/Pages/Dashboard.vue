@@ -7,9 +7,10 @@
     <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
         <div class="flex"></div>
         <h1 class="text-primary max-w-lg text-4xl font-bold tracking-tight sm:text-6xl">DigitaLegale</h1>
-        <p class="mt-6 text-lg leading-8">Aiuto gli studi legali ad eccellere online, creando siti web, servizi SEO e ottimizzazzione alle conversioni 🌐</p>
+        <p class="mt-6 text-lg leading-8">Aiuto gli studi legali ad eccellere online<br/> Sviluppo siti web, li posiziono in alto alle ricerche di Google e li ottimizzo costantemente per aumentare la conversione dei visitatori in clienti. 🌐</p>
         <div class="mt-10 flex items-center gap-x-6 mb-20">
-            <a href="#" class="btn btn-primary">Parliamo</a>
+            <p class="text-secondary">Ti interessa? Clicca qui:</p>
+            <a href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza grauita</a>
             <!--<a href="#" class="text-sm font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
         </div>
         <div class="grid grid-cols-1 gap-12">
