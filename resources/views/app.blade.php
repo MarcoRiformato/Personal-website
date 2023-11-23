@@ -18,5 +18,6 @@
     <body class="font-sans antialiased theme-night">
         @inertia
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
     </body>
 </html>
