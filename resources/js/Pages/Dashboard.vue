@@ -9,7 +9,7 @@
         <h1 class="text-primary max-w-lg text-4xl font-bold tracking-tight sm:text-6xl">DigitaLegale</h1>
         <p class="mt-6 text-lg leading-8">Aiuto gli studi legali ad eccellere online<br/> Sviluppo siti web, li posiziono in alto alle ricerche di Google e li ottimizzo costantemente per aumentare la conversione dei visitatori in clienti. 🌐</p>
         <div class="mt-10 flex items-center gap-x-6 mb-20">
-            <p class="text-secondary">Ti interessa? Clicca qui:</p>
+            <p class="text-secondary">Ti interessa?</p>
             <a href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza grauita</a>
             <!--<a href="#" class="text-sm font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
         </div>
