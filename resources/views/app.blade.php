@@ -14,12 +14,6 @@
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
         <!-- Hotjar Tracking Code for https://marcoriformato.com/ -->
-        @inertiaHead
-    </head>
-    <body class="font-sans antialiased theme-night">
-        @inertia
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <script src="https://player.vimeo.com/api/player.js"></script>
         <script>
             (function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -30,5 +24,11 @@
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
+        @inertiaHead
+    </head>
+    <body class="font-sans antialiased theme-night">
+        @inertia
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
     </body>
 </html>
