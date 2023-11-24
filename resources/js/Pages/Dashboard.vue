@@ -3,19 +3,17 @@
   <div class="bg-base overflow-hidden">
   <div class="relative isolate  sm:px-4">
 <!-- Landing -->
-<div id="Landing" class="-mt-20 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
+<div id="Landing" class="-mt-20 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-        <div class="flex"></div>
         <h1 class="text-primary max-w-lg text-4xl font-bold tracking-tight sm:text-6xl">DigitaLegale</h1>
         <p class="mt-6 text-lg leading-8">Aiuto gli studi legali ad eccellere online<br/> Sviluppo siti web, li posiziono in alto alle ricerche di Google e li ottimizzo costantemente per aumentare la conversione dei visitatori in clienti. 🌐</p>
-        <div class="mt-10 items-center gap-x-6 mb-20">
-            <p class="text-secondary">Ti interessa?</p>
-            <a href="#" class="btn btn-primary mt-2" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</a>
-            <!--<a href="#" class="text-sm font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
+        <div class="lg:hidden items-center gap-x-6 my-5">
+          <p class="text-secondary">Ti interessa?</p>
+          <a href="#" class="btn btn-primary mt-2" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</a>
         </div>
         <div class="grid grid-cols-1 gap-12">
         <div v-for="feature in features" :key="feature.name" class="">
-            <div class="flow-root rounded-lg bg-secondary-content px-6 pb-8">
+            <div class="flow-root rounded-lg bg-secondary-content px-6 pb-8 mt-10">
                 <div class="-mt-6">
                     <div>
                         <span class="bg-secondary-focus inline-flex items-center justify-center rounded-xl p-3 shadow-lg">
@@ -35,8 +33,12 @@
         </div>
     </div>
     
-    <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-      <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[22.875rem] max-w-full drop-shadow-xl">
+    <div class="-mt-10 lg:flex-shrink-0 lg:flex-grow">
+      <div class="hidden lg:flex items-center gap-x-6 -mt-10">
+          <p class="text-secondary">Ti interessa?</p>
+          <a href="#" class="btn btn-primary mt-2" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</a>
+      </div>
+      <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[22.875rem] max-w-full drop-shadow-xl mt-20">
         <title>App screenshot</title>
         <defs>
         <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
@@ -80,8 +82,8 @@
 </div> -->
   
 <!-- Chi sono -->
-<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-  <div class="relative isolate overflow-hidden bg-primary-content py-20 px-6 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
+<div class="mx-auto max-w-7xl sm:px-6 lg:px-8 lg:-mt-20">
+  <div class="relative isolate overflow-hidden bg-primary-content py-5 px-6 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
       <ul role="list" class="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
         <li v-for="person in people" :key="person.name" class="flex flex-col items-center gap-10 pt-12 sm:flex-row sm:items-start">
           <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover " :src="person.imageUrl" alt="" />
@@ -115,8 +117,8 @@
 </div>
 
 <!-- Sviluppo web -->
-<div  id="sviluppo" class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-4">
-<div class="mt-10 relative isolate overflow-hidden bg-primary-content px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
+<div  id="sviluppo" class="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-10">
+<div class="relative isolate overflow-hidden bg-primary-content py-5 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Sviluppo Web Su Misura</h2>
