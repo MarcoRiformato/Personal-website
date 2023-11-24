@@ -35,7 +35,7 @@
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Svela il Potenziale del Tuo Studio Legale</h2>
     <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Scopri il potenziale di conversione inespresso del tuo sito legale. Ti daremo un report dettagliato con consigli, proposte e idee immediatamente applicabili dalla tua agenzia</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Voglio un audit CRO del mio sito</button>
+        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</button>
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
@@ -80,7 +80,7 @@
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Un nuovo sito.<br/> Ottimizzato sin dall'inizio per la CRO</h2>
     <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Un sito che cresce con te è la chiave per un business in espansione. Parti con il piede giusto con strumenti analitici avanzati e un design sempre in evoluzione.</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Voglio un sito ottimizzato per le conversioni</button>
+        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</button>
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
@@ -127,7 +127,7 @@
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Supporto Strategico e Monitoraggio Costante</h2>
     <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Non lasciare nulla al caso. Con report mensili dettagliati e sessioni di supporto settimanali, sarai sempre protagonista della rivoluzione digitale del tuo studio</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Voglio rivoluzionare il mio studio</button>
+        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</button>
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />

@@ -35,7 +35,7 @@
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Svela il Potenziale del Tuo Studio Legale</h2>
     <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Scopri come massimizzare la tua presenza online con un'analisi SEO completa e un piano d'azione strategico. Facciamo emergere il tuo studio nel mondo digitale.</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Scopri il potenziale del tuo studio</button>
+        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</button>
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
@@ -80,7 +80,7 @@
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Eleva la Tua Autorità Online</h2>
     <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Trasforma il tuo sito in un punto di riferimento per il diritto con contenuti ricercati e parole chiave strategiche. Prendi la parola sul web e diventa una voce autorevole nel tuo settore</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Voglio aumentare la mia autorevolezza</button>
+        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</button>
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
@@ -127,7 +127,7 @@
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Conquista il Mercato Locale</h2>
     <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Aumenta la tua visibilità dove conta di più: nella tua comunità. Con il nostro approccio SEO locale, sarai la prima scelta in zona per servizi legali.</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Voglio ottimizzare la mia Visibilità Locale</button>
+        <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</button>
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
         <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
