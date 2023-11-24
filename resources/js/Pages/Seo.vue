@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="flex items-center justify-end lg:order-first">
-        <img src="seo1.png" alt="Product screenshot" class="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[30rem]"/>
+        <img src="seo1.webp" alt="Product screenshot" class="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[30rem]"/>
     </div>
     </div>
 </div>
@@ -69,7 +69,7 @@
             </dl>
             </div>
         </div>
-        <img src="seo2.png" alt="Product screenshot" class="w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[40rem] md:-ml-4 lg:-ml-0"/>
+        <img src="seo2.webp" alt="Product screenshot" class="w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[40rem] md:-ml-4 lg:-ml-0"/>
         </div>
     </div>
 </div>

@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="flex items-center justify-end lg:order-first">
-        <img src="cro1.png" alt="Product screenshot" class="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10" width="2432" height="1442" />
+        <img src="cro1.webp" alt="Product screenshot" class="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10" width="2432" height="1442" />
     </div>
     </div>
 </div>
@@ -69,7 +69,7 @@
             </dl>
             </div>
         </div>
-        <img src="cro2.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 md:-ml-4 lg:-ml-0" width="2432" height="1442" />
+        <img src="cro2.webp" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 md:-ml-4 lg:-ml-0" width="2432" height="1442" />
         </div>
     </div>
 </div>
@@ -115,7 +115,7 @@
         </div>
     </div>
     <div class="flex items-center justify-end lg:order-first">
-        <img src="cro3.png" alt="Product screenshot" class="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10" width="2432" height="1442" />
+        <img src="cro3.webp" alt="Product screenshot" class="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10" width="2432" height="1442" />
     </div>
     </div>
 </div>
