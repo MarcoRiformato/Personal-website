@@ -8,8 +8,8 @@
         <h1 class="text-primary max-w-lg text-4xl font-bold tracking-tight sm:text-6xl">DigitaLegale</h1>
         <p class="mt-6 text-lg leading-8">Aiuto gli studi legali ad eccellere online<br/> Sviluppo siti web, li posiziono in alto alle ricerche di Google e li ottimizzo costantemente per aumentare la conversione dei visitatori in clienti. 🌐</p>
         <div class="lg:hidden items-center gap-x-6 my-5">
-          <p class="text-secondary">Ti interessa?</p>
-          <a href="#" class="btn btn-primary mt-2" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</a>
+          <p class="text-secondary">Scopri di più, senza impegno:</p>
+          <a href="#" class="btn btn-primary mt-2 button-glow" @click.prevent="openCalendlyPopup">Prenota una chiamata</a>
         </div>
         <div class="grid grid-cols-1 gap-12">
         <div v-for="feature in features" :key="feature.name" class="">
@@ -23,8 +23,8 @@
                     <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-secondary">{{ feature.name }}</h3>
                     <p class="mt-5 text-base leading-7">{{ feature.description }}</p>
                     <p class="mt-6">
-                      <button @click="scrollToSection(feature.href)" class="text-sm font-semibold leading-6 text-primary cursor-pointer">
-                        Scopri di più <span aria-hidden="true">→</span>
+                      <button @click="scrollToSection(feature.href)" class="animate-bounce text-sm font-semibold leading-6 text-primary cursor-pointer">
+                        Clicca per scorrere a questa sezione <span aria-hidden="true">↓</span>
                       </button>
                     </p>
                 </div>
@@ -35,8 +35,8 @@
     
     <div class="-mt-10 lg:flex-shrink-0 lg:flex-grow">
       <div class="hidden lg:flex items-center gap-x-6 -mt-10">
-          <p class="text-secondary">Ti interessa?</p>
-          <a href="#" class="btn btn-primary mt-2" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</a>
+          <p class="text-secondary">Scopri di più, senza impegno:</p>
+          <a href="#" class="btn btn-primary mt-2 button-glow" @click.prevent="openCalendlyPopup">Prenota una chiamata</a>
       </div>
       <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[22.875rem] max-w-full drop-shadow-xl mt-20">
         <title>App screenshot</title>
@@ -117,7 +117,8 @@
 </div>
 
 <!-- Sviluppo web -->
-<div  id="sviluppo" class="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-10">
+<div id="sviluppo"></div>
+<div class="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-10">
 <div class="relative isolate overflow-hidden bg-primary-content py-5 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
@@ -134,7 +135,7 @@
           </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
             <p class="flex-auto">{{ sviluppo.description }}</p>
-            <p class="mt-6">
+            <p class="mt-3">
               <a href="#" @click.prevent="$inertia.visit(route('sviluppo'))" class="text-sm font-semibold leading-6 text-indigo-400">Scopri di più <span aria-hidden="true">→</span></a>
             </p>
           </dd>
@@ -145,7 +146,7 @@
   <div class="mt-5 relative isolate overflow-hidden bg-secondary-content px-6 py-12 text-center shadow-2xl rounded-3xl sm:px-16">
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-primary">Rivoluziona la tua presenza online.</h2>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-      <a href="#" class="btn btn-primary"  @click.prevent="openCalendlyPopup">Cominciamo</a>
+      <a href="#" class="btn btn-primary"  @click.prevent="openCalendlyPopup">Prenota chiamata</a>
       <!--<a href="#" class="font-semibold leading-6 text-secondary">Casi studio <span aria-hidden="true">→</span></a>-->
     </div>
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
@@ -179,7 +180,7 @@
           </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
             <p class="flex-auto">{{ seo.description }}</p>
-            <p class="mt-6">
+            <p class="mt-3">
               <a href="#" @click.prevent="$inertia.visit(route('seo'))" class="text-sm font-semibold leading-6 text-indigo-400">Scopri di più <span aria-hidden="true">→</span></a>
             </p>
           </dd>
@@ -224,7 +225,7 @@
           </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
             <p class="flex-auto">{{ cro.description }}</p>
-            <p class="mt-6">
+            <p class="mt-3">
               <a href="#" @click.prevent="$inertia.visit(route('cro'))" class="text-sm font-semibold leading-6 text-indigo-400">Scopri di più <span aria-hidden="true">→</span></a>
             </p>
           </dd>
@@ -457,3 +458,23 @@ const faqs = [
 
 const mobileMenuOpen = ref(false)
 </script>
+
+<style>
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 1px #9ecaed, 0 0 2px #9ecaed, 0 0 3px #9ecaed, 0 0 5px #2e9afe, 0 0 8px #2e9afe, 0 0 10px #2e9afe, 0 0 25px #2e9afe, 0 0 23px #2e9afe;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: none;
+    opacity: 0.8;
+  }
+}
+
+.button-glow {
+  animation: glow 7s infinite;
+  /* Rest of your button styling */
+}
+
+
+</style>
