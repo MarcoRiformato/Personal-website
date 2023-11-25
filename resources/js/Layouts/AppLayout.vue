@@ -206,12 +206,6 @@ function openCalendlyPopup(event) {
             >
                 Convertire visitatori in clienti
             </ResponsiveNavLink>
-
-            <ResponsiveNavLink 
-            :href="route('book')"
-            >
-                Prenota
-            </ResponsiveNavLink>
         </div>
 
 
