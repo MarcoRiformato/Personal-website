@@ -1,5 +1,5 @@
 <template>
-  <AppLayout title="Main">
+  <AppLayout title="Benvenuto">
   <div class="bg-base overflow-hidden">
   <div class="relative isolate  sm:px-4">
 <!-- Landing -->
