@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="ahrefs-site-verification" content="5f0dbeea8f4a77d4df5d333f901ebf0ae3e56edfc705a74a3b26d2889e04e79d">
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
