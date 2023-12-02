@@ -55,9 +55,9 @@
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
         <div class="lg:pr-8 lg:pt-4">
           <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 text-indigo-400">Secondo step</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Gestionale contenuti compreso</p>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Potenziate la vostra reputazione legale con studi di caso che dimostrano il vostro successo, presentate i vostri servizi in modo chiaro e attirate l'attenzione con articoli che attestano la vostra autorità nel settore. Gestite in autonomia i contenuti o, se preferite, lasciate che mi occupi di tutto con il servizio di scrittura 'Done For You'.</p>
+            <h2 class="text-base font-semibold leading-7 text-indigo-400">Semplice, efficace, senza pensieri.</h2>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Gestione contenuti compresa</p>
+            <p class="mt-6 text-lg leading-8 text-gray-300">Eleva il tuo studio legale con contenuti su misura. Gli <b>articoli</b> attirano traffico e interesse, mentre i <b>casi studio</b> dimostrano la tua competenza con esempi concreti. Io mi occuperò di tutto: tu pensa ai tuoi clienti, io alla tua presenza online.</p>
             <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
               <div v-for="secondo in secondos" :key="secondo.name" class="relative pl-9">
                 <dt class="inline font-semibold text-white">
@@ -167,20 +167,15 @@ const primos = [
 
 const secondos = [
   {
-    name: 'Casi studio, servizi e articoli, cosa sono?',
+    name: 'Casi studio',
     description:
-      'La strategia che andremo ad applicare ha più strumenti. I casi studio sono delle documentazioni su qualche caso legale che avete vinto, di modo da poter mostrare la vostra capacità nel settore. I servizi, invece, è dove potremo esporre i vostri servizi al pubblico. Infine, gli articoli mostreranno ai visitatori che siete una voce autorevole nel mondo legale',
+      'I case study sono strumenti potenti per dimostrare l\'efficacia e la professionalità del tuo studio legale. Attraverso l\'analisi di casi reali gestiti dallo studio, mostrano concretamente come hai affrontato e risolto specifiche problematiche legali. La loro pubblicazione sul tuo sito aumenterà la credibilità agli occhi dei potenziali clienti, fornendo loro esempi tangibili della tua competenza e dei tuoi successi.',
     icon: ClipboardDocumentIcon,
   },
   {
-    name: 'Gestione autonoma',
-    description: 'Non ci sarà bisogno di chiedere password o aspettare una nostra risposta. Potrai creare, modificare ed eliminare articoli, servizi o casi studio in completa autonomia',
+    name: 'Articoli',
+    description: 'Gli articoli sono un elemento fondamentale per mantenere il tuo sito web sempre aggiornato. Attraverso una serie di contenuti rilevanti e ben scritti, non solo attirerai traffico sul tuo sito, ma offrirai anche un valore aggiunto ai tuoi visitatori. Come esperto in SEO, mi dedicherò a creare articoli ottimizzati per i motori di ricerca, garantendo che il tuo sito emerga nelle ricerche online',
     icon: PencilSquareIcon,
-  },
-  {
-    name: 'Servizio di scrittura contenuti - Done For You',
-    description: 'Se richiesto, posso anche occuparmi della creazione contenuti per te. In base al tuo obbiettivo o priorità, concorderemo insieme la frequenza e gli argomenti. In questo modo, avrai un sito  web autorevole e sempre aggiornato, ma senza dovertene occupare direttamente',
-    icon: CheckCircleIcon,
   }
 ]
 </script>

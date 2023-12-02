@@ -370,12 +370,12 @@ const people = [
 const sviluppi = [
 {
 name: 'Design su misura',
-description: 'Creerò il vostro brand distintivo e il posizionamento online, sviluppando in 100 giorni un sito web veloce e mobile-friendly. Post consegna, offrirò aggiornamenti continui per testi e immagini, garantendo al vostro sito dinamicità e attualità',
+description: 'Creerò il vostro brand distintivo e il posizionamento online, sviluppando in 45 giorni un sito web veloce e mobile-friendly. Post consegna, offrirò aggiornamenti continui per testi e immagini, per mantenere il sito sempre attuale',
 icon: DevicePhoneMobileIcon,
 },
 {
 name: 'Gestione contenuti compresa',
-description: 'Potenziate la vostra reputazione legale con studi di caso che dimostrano il vostro successo, presentate i vostri servizi in modo chiaro e attirate l attenzione con articoli che attestano la vostra autorità nel settore. Gestite in autonomia i contenuti o, se preferite, lasciate che mi occupi di tutto con il servizio di scrittura "Done For You".',
+description: 'Eleva il tuo studio legale con contenuti su misura. Gli articoli attirano traffico e interesse, mentre i casi studio dimostrano la tua competenza con esempi concreti. Io mi occuperò di tutto: tu pensa ai tuoi clienti, io alla tua presenza online.',
 icon: PencilSquareIcon,
 },
 {
