@@ -9,7 +9,7 @@
         <div class="lg:max-w-lg">
         <h2 class="text-base font-semibold leading-7 text-secondary">Primo step</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">Sviluppo su misura</p>
-        <p class="mt-6 text-lg leading-8">Creerò il vostro brand distintivo e il posizionamento online, sviluppando in 100 giorni un sito web veloce e mobile-friendly. Post consegna, offrirò aggiornamenti continui per testi e immagini, garantendo al vostro sito dinamicità e attualità.</p>
+        <p class="mt-6 text-lg leading-8">Creerò il vostro brand distintivo e il posizionamento online, sviluppando in 45 giorni un sito web veloce e mobile-friendly. Post consegna, offrirò aggiornamenti continui per testi e immagini, garantendo al vostro sito dinamicità e attualità.</p>
         <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
             <div v-for="primo in primos" :key="primo.name" class="relative pl-9">
             <dt class="inline font-semibold">
@@ -33,7 +33,7 @@
 <div class="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8 ">
     <div class="relative isolate overflow-hidden px-6 py-24 bg-primary-content text-center shadow-2xl sm:rounded-3xl sm:px-16">
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl text-secondary">Rivoluziona la tua presenza online</h2>
-    <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Dalla definizione del brand allo sviluppo in 100 giorni, siamo i tuoi alleati nel mondo digitale</p>
+    <p class="mx-auto mt-6 max-w-xl text-lg leading-8">Dalla definizione del brand allo sviluppo in 45 giorni, siamo i tuoi alleati nel mondo digitale</p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
         <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza gratuita</button>
     </div>
@@ -155,7 +155,7 @@ const primos = [
   },
   {
     name: 'Sviluppo',
-    description: 'In 100 giorni, svilupperemo un sito web su misura. Avremo cura di renderlo veloce e ottimizzato per i dispositivi mobili, che oggi costituiscono oltre il 50% della navigazione su internet',
+    description: 'In 45 giorni, svilupperemo un sito web su misura. Avremo cura di renderlo veloce e ottimizzato per i dispositivi mobili, che oggi costituiscono oltre il 50% della navigazione su internet',
     icon: CodeBracketIcon,
   },
   {
