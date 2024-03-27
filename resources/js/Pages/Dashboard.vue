@@ -29,7 +29,7 @@
   </div>
 
 <!-- DigitaLegale -->
-<div id="Landing" class="-mt-20 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
+<div id="Landing" class="py-8 mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
         <h1 class="text-primary max-w-lg text-4xl font-bold tracking-tight sm:text-6xl">DigitaLegale</h1>
         <p class="mt-6 text-lg leading-8">Scegliere un' agenzia per il proprio studio legale non è una scelta facile. Ci sono molte agenzie generaliste che promettono di vendere siti "ottimizzati per SEO", ma non si curano di seguire il proprio cliente ed assicurarsi che ottenga effettivamente dei risultati. Esiste però un nuovo metodo, che permette di ottenere più contatti da parte di clienti qualificati, evitando perditempo dal basso valore economico.</p>
@@ -50,8 +50,8 @@
                     <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-secondary">{{ feature.name }}</h3>
                     <p class="mt-5 text-base leading-7">{{ feature.description }}</p>
                     <p class="mt-6">
-                      <button @click="scrollToSection(feature.href)" class="animate-bounce text-sm font-semibold leading-6 text-primary cursor-pointer">
-                        Scopri di più<span aria-hidden="true">↓</span>
+                      <button @click="scrollToSection(feature.href)" class=" text-sm font-semibold leading-6 text-primary cursor-pointer">
+                        Scopri di più →
                       </button>
                     </p>
                 </div>
@@ -80,10 +80,10 @@
 </svg>
 </div>
 </div>
-  
+
 <!-- Chi sono -->
-<div class="mx-auto max-w-7xl sm:px-6 lg:px-20 lg:-mt-20">
-  <div class="relative isolate overflow-hidden bg-primary-content py-5 px-6 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-12 xl:px-24">
+<div class="mx-auto max-w-7xl sm:px-6">
+  <div class="relative isolate overflow-hidden bg-primary-content py-5 px-6 sm:rounded-3xl sm:px-10 my-8 sm:py-24 lg:py-12 xl:px-24">
       <ul role="list" class="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
         <li v-for="person in people" :key="person.name" class="flex flex-col items-center gap-10 pt-12 sm:flex-row sm:items-start">
           <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover " :src="person.imageUrl" alt="" />
@@ -117,7 +117,7 @@
 </div>
 
 <!-- Features -->
-<div class="bg-gray-900 py-24 sm:py-32">
+<div class="bg-gray-900 py-8">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 class="text-base font-semibold leading-7 text-indigo-400">Come funziona?</h2>
@@ -129,12 +129,33 @@
           <dt class="inline font-semibold text-white">
             <component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
             {{ feature.name }}
-          </dt>
+          </dt><br/>
           {{ ' ' }}
           <dd class="inline">{{ feature.description }}</dd>
       </div>
     </dl>
   </div>
+</div>
+
+<!--Stats-->
+<div class="bg-gray-800 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+        <div v-for="stat in stats" :key="stat.id" class="mx-auto flex max-w-xs flex-col gap-y-4">
+          <dt class="text-base leading-7 text-gray-400">{{ stat.name }}</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">{{ stat.value }}</dd>
+        </div>
+      </dl>
+    </div>
+</div>
+
+<div class="bg-gray-900 px-6 py-12 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Un modo migliore di fare marketing</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+    </div>
 </div>
 
 <!-- FAQs -->
@@ -275,6 +296,12 @@ const people = [
     twitterUrl: '#',
     linkedinUrl: '#',
   },
+]
+
+const stats = [
+  { id: 1, name: 'Numero di avvocati in Italia', value: '2.4M' },
+  { id: 2, name: 'Numero di utenti su internet in Italia', value: '51M' },
+  { id: 3, name: 'Percentuale degli utenti sulla popolazione totale', value: '87,9%' },
 ]
 
 const mobileMenuOpen = ref(false)
