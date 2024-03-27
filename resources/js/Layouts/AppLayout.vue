@@ -106,6 +106,10 @@ function openCalendlyPopup(event) {
                         <span class="default-text">Voglio trasformare i visitatori in clienti</span>
                         <span class="alt-text hidden text-xs">Convertire visitatori in clienti</span>
                     </NavLink>
+                    <NavLink :href="route('blog')">
+                        <span class="default-text">Blog</span>
+                        <span class="alt-text hidden text-xs">Blog</span>
+                    </NavLink>
                     <a as="button" class="mt-2 btn btn-primary text-xs" href="#" @click.prevent="openCalendlyPopup">Parliamo</a>
                 </div>
             </div>
@@ -299,7 +303,7 @@ function openCalendlyPopup(event) {
 </main>
 </div>
 <footer class="bg-neutral -mt-12">
-<div class="mx-auto max-w-7xl -mt-30 overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+<div class="mx-auto max-w-7xl -mt-30 overflow-hidden px-6 py-5 mt-20">
     <div class="lex justify-center space-x-10">
     <!--<a v-for="item in navigation.social" :key="item.name" target="_blank" :href="item.href" class=" hover:text-gray-500">
         <span class="sr-only">{{ item.name }}</span>
