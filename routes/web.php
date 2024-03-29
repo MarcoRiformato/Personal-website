@@ -38,8 +38,15 @@ Route::middleware([
 });*/
 
 Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard'); 
+    return Inertia::render('Dashboard', [
+    ])->withViewData([
+        'meta' => [
+            'title' => 'Benvenuto - Marco Riformato',
+            'description' => 'Marketing online per studi legali. ',
+        ],
+    ]);
+})->name('dashboard');
+
 
 Route::get('/prenota', [BookingsController::class, 'Book'])->name('book');
 
