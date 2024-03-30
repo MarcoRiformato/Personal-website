@@ -65,13 +65,13 @@
     <img src="tel5.webp" alt="" />
     </foreignObject>
   </svg>
-  <div class="flex flex-col items-center justify-center lg:flex-col lg:items-center lg:justify-center gap-x-6 lg:mt-0 py-8">
+  <div class="flex flex-col items-center justify-center lg:flex-col lg:items-center lg:justify-center gap-x-6 lg:mt-0 py-16">
       <p class="text-center lg:max-w-md px-4 lg:px-0">Scegliere un' agenzia per il proprio studio legale non è una scelta facile. Ci sono molte agenzie generaliste che promettono di vendere siti "ottimizzati per SEO", ma non si curano di seguire il proprio cliente ed assicurarsi che ottenga effettivamente dei risultati. Esiste però un nuovo metodo, che permette di ottenere più contatti da parte di clienti qualificati, evitando perditempo dal basso valore economico.</p>
       <div class="flex flex-col items-center justify-center py-8">
       <p class="text-secondary">Scopri di più, senza impegno:</p>
       <a href="#" class="btn btn-primary button-glow mt-2" @click.prevent="openCalendlyPopup">Prenota una chiamata</a>
     </div>
-    </div>
+  </div>
   </div>
 </div>
 
@@ -132,7 +132,7 @@
 </div>
 
 <!--Stats-->
-<div class="bg-gray-800 py-24 sm:py-32">
+<div class="bg-gray-800 py-16">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
         <div v-for="stat in stats" :key="stat.id" class="mx-auto flex max-w-xs flex-col gap-y-4">
@@ -143,7 +143,7 @@
     </div>
 </div>
 
-<!-- Longer description -->
+<!-- Longer description
 <div class="bg-gray-900 px-6 py-12 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-4xl font-bold tracking-tight text-primary sm:text-6xl">Un modo migliore di fare marketing</h2>
@@ -151,7 +151,7 @@
       <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
       <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
     </div>
-</div>
+</div> -->
 
 <!-- FAQs -->
 <div
@@ -247,7 +247,7 @@ const servizi = [
   },
   {
     name: 'Converti i visitatori in effettivi clienti',
-    description: 'Spesso le agenzie si fermano alla SEO. Ma una volta che abbiamo un sito nuovo e vi abbiamo portato il traffico, è importante assicurarci che quante più persone che visitano il sito diventino degli effettivi clienti. Tracciamento dei click, movimenti di mouse e tanto altro per evolvere continuamente il sito.',
+    description: 'Una volta che abbiamo un sito nuovo e vi abbiamo portato del traffico, è importante assicurarci che quante più persone che visitano il sito diventino degli effettivi clienti. Tracciamento dei click, movimenti di mouse e tanto altro per evolvere continuamente il sito.',
     href: 'cro',
     icon: CursorArrowRaysIcon,
   }
@@ -265,7 +265,7 @@ const faqs = [
     answer: "La Convertion Rate Optimization, ovvero Ottimizzazione del tasso di conversione, consiste nello studio ed evoluzione continua di un sito per fare in modo di raggiungere l obbiettivo (più tempo passato sulla pagina, scaricare un contenuto per ottenere l indirizzo email,)"
   },
   {
-    question: "Quanto tempo ci vuole per vedere i risultati?",
+    question: "Quanto tempo ci vuole per vedere dei risultati?",
 
     answer: "Dipende dal servizio: un nuovo sito web può garantire risultati in poche settimane, mentre la ottimizzazione SEO e CRO può richiedere diversi mesi. Non voglio illuderti con risultati immediati, preferisco una promessa in meno ed un risultato in più"
   },
