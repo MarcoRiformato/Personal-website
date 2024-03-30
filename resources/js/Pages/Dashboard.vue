@@ -9,7 +9,7 @@
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
       <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
     </div>
-    <div class="mx-auto max-w-2xl py-16">
+    <div class="mx-auto max-w-2xl py-8">
       <div class="hidden sm:mb-8 sm:flex sm:justify-center">
         <!--<div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
           Aperte le candidature per il mese di aprile<a href="#" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true" />Candidati <span aria-hidden="true">&rarr;</span></a>
@@ -26,46 +26,33 @@
     <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
       <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
     </div>
-  </div>
+</div>
 
 <!-- DigitaLegale -->
-<div id="Landing" class="py-8 mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
-    <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-        <h1 class="text-primary max-w-lg text-4xl font-bold tracking-tight sm:text-6xl">DigitaLegale</h1>
-        <p class="mt-6 text-lg leading-8">Scegliere un' agenzia per il proprio studio legale non è una scelta facile. Ci sono molte agenzie generaliste che promettono di vendere siti "ottimizzati per SEO", ma non si curano di seguire il proprio cliente ed assicurarsi che ottenga effettivamente dei risultati. Esiste però un nuovo metodo, che permette di ottenere più contatti da parte di clienti qualificati, evitando perditempo dal basso valore economico.</p>
-
-        <div class="lg:hidden items-center gap-x-6 my-5">
-          <p class="text-secondary">Scopri di più, senza impegno:</p>
-          <a href="#" class="btn btn-primary mt-2 button-glow" @click.prevent="openCalendlyPopup">Prenota una chiamata</a>
-        </div>
-        <div class="grid grid-cols-1 gap-12">
-        <div v-for="feature in servizi" :key="feature.name" class="">
-            <div class="flow-root rounded-lg bg-secondary-content px-6 pb-8 mt-10">
-                <div class="-mt-6">
-                    <div>
-                        <span class="bg-secondary-focus inline-flex items-center justify-center rounded-xl p-3 shadow-lg">
-                            <component :is="feature.icon" class="h-8 w-8 text-white" aria-hidden="true" />
-                        </span>
-                    </div>
-                    <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-secondary">{{ feature.name }}</h3>
-                    <p class="mt-5 text-base leading-7">{{ feature.description }}</p>
-                    <p class="mt-6">
-                      <button @click="scrollToSection(feature.href)" class=" text-sm font-semibold leading-6 text-primary cursor-pointer">
-                        Scopri di più →
-                      </button>
-                    </p>
-                </div>
-                </div>
+<div id="Landing" class="py-8 mx-auto max-w-7xl px-6 lg:flex lg:items-start lg:gap-x-10 lg:px-8">
+  <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+    <div class="grid grid-cols-1 gap-12 mt-10">
+      <div v-for="feature in servizi" :key="feature.name">
+        <div class="flow-root rounded-lg bg-secondary-content px-6 pb-8">
+          <div class="-mt-6">
+            <div>
+              <span class="bg-secondary-focus inline-flex items-center justify-center rounded-xl p-3 shadow-lg">
+                <component :is="feature.icon" class="h-8 w-8 text-white" aria-hidden="true" />
+              </span>
             </div>
+            <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-secondary">{{ feature.name }}</h3>
+            <p class="mt-5 text-base leading-7">{{ feature.description }}</p>
+            <button @click="scrollToSection(feature.href)" class="mt-6 text-sm font-semibold leading-6 text-primary cursor-pointer">
+              Scopri di più →
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-    
-<div class="-mt-10 lg:flex-shrink-0 lg:flex-grow">
-  <div class="hidden lg:flex items-center gap-x-6 -mt-10">
-      <p class="text-secondary">Scopri di più, senza impegno:</p>
-      <a href="#" class="btn btn-primary mt-2 button-glow" @click.prevent="openCalendlyPopup">Prenota una chiamata</a>
   </div>
-  <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[22.875rem] max-w-full drop-shadow-xl mt-20">
+
+  <div class="lg:flex-shrink-0 lg:flex-grow lg:flex lg:flex-col lg:items-start lg:mt-0 lg:items-center">
+    <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[22.875rem] max-w-full drop-shadow-xl lg:mt-0">
     <title>App screenshot</title>
     <defs>
     <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
@@ -77,14 +64,21 @@
     <foreignObject width="316" height="684" transform="translate(24 24)" clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
     <img src="tel5.webp" alt="" />
     </foreignObject>
-</svg>
-</div>
+  </svg>
+  <div class="flex flex-col items-center justify-center lg:flex-col lg:items-center lg:justify-center gap-x-6 lg:mt-0 py-8">
+      <p class="text-center lg:max-w-md px-4 lg:px-0">Scegliere un' agenzia per il proprio studio legale non è una scelta facile. Ci sono molte agenzie generaliste che promettono di vendere siti "ottimizzati per SEO", ma non si curano di seguire il proprio cliente ed assicurarsi che ottenga effettivamente dei risultati. Esiste però un nuovo metodo, che permette di ottenere più contatti da parte di clienti qualificati, evitando perditempo dal basso valore economico.</p>
+      <div class="flex flex-col items-center justify-center py-8">
+      <p class="text-secondary">Scopri di più, senza impegno:</p>
+      <a href="#" class="btn btn-primary button-glow mt-2" @click.prevent="openCalendlyPopup">Prenota una chiamata</a>
+    </div>
+    </div>
+  </div>
 </div>
 
 <!-- Chi sono -->
 <div class="mx-auto max-w-7xl sm:px-6">
-  <div class="relative isolate overflow-hidden bg-primary-content py-5 px-6 sm:rounded-3xl sm:px-10 my-8 sm:py-24 lg:py-12 xl:px-24">
-      <ul role="list" class="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
+  <div class="relative isolate overflow-hidden bg-primary-content py-5 px-6 sm:rounded-3xl sm:px-10  sm:py-24 lg:py-12 xl:px-24">
+      <ul role="list" class="-mt-12  divide-y divide-gray-200 xl:col-span-3">
         <li v-for="person in people" :key="person.name" class="flex flex-col items-center gap-10 pt-12 sm:flex-row sm:items-start">
           <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover " :src="person.imageUrl" alt="" />
           <div class="max-w-xl flex-auto">
@@ -152,8 +146,8 @@
 <!-- Longer description -->
 <div class="bg-gray-900 px-6 py-12 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Un modo migliore di fare marketing</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-300">Con queste statistiche, diventa fondamentale</p>
+      <h2 class="text-4xl font-bold tracking-tight text-primary sm:text-6xl">Un modo migliore di fare marketing</h2>
+      <p class="mt-6 text-lg leading-8">Scegliere un' agenzia per il proprio studio legale non è una scelta facile. Ci sono molte agenzie generaliste che promettono di vendere siti "ottimizzati per SEO", ma non si curano di seguire il proprio cliente ed assicurarsi che ottenga effettivamente dei risultati. Esiste però un nuovo metodo, che permette di ottenere più contatti da parte di clienti qualificati, evitando perditempo dal basso valore economico.</p>
       <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
       <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
     </div>

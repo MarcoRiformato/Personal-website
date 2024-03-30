@@ -310,7 +310,7 @@ function openCalendlyPopup(event) {
         <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
     </a>-->
     </div>
-    <p class="text-center text-xs leading-5 text-info">&copy; 2023 - Riformato Marco</p>
+    <p class="text-center text-xs leading-5 text-info">&copy; 2024 - Riformato Marco</p>
 </div>
 </footer>
 </div>
