@@ -47,12 +47,58 @@
       </figure>
     </div>
     <figure class="mt-16">
-      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3" alt="" />
-      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6">
-        <InformationCircleIcon class="mt-0.5 h-5 w-5 flex-none" aria-hidden="true" />
-        Faucibus commodo massa rhoncus, volutpat.
-      </figcaption>
+      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="svil0.webp" alt="" />
     </figure>
+
+    <h1 class="text-2xl font-bold mt-8">Cosa rende il nostro servizio di sviluppo diverso?</h1>
+    <p class="mt-6">Studiamo attentamente il comportamento dei visitatori sul sito dei nostri clienti. Cosa è importante per i consumatori? Il design ha importanza? Cosa può aumentare i tassi di conversione? Mettiamo molta attenzione nei siti che progettiamo per aiutare ad aumentare la possibilità che la tua campagna di marketing per studio legale sia un successo!</p>
+
+    <h1 class="text-2xl font-bold mt-8">Sei pronto a portare il sito web del tuo studio legale al livello successivo?</h1>
+    <p class="mt-6">Non è ora che il design del tuo sito rifletta la qualità del tuo studio legale? Se sei pronto ad impressionare i tuoi consumatori e i tuoi colleghi, è il momento di contattarci. Compila la richiesta di preventivo qui sotto e inizia oggi stesso.</p>
+
+    <h2 class="mt-16 text-2xl font-bold tracking-tight text-primary">Domande Frequenti sul Design di Siti Web per Studi Legali</h2>
+    
+    <p class="font-bold italic mt-12">Il design del mio sito può influenzare la mia posizione su Google?</p>
+    <p class="mt-4">Sì, il design, la disposizione e la funzionalità di un sito web avranno un impatto sulla tua posizione nei ranking. Ecco perché è importante affidarsi a agenzie specializzate che hanno una profonda comprensione della SEO per avvocati. Anche se molte aziende sostengono di sapere come costruire un sito web ottimizzato per la SEO, la grande maggioranza delle aziende di design per siti web di studi legali non ha la capacità o l'organizzazione per ottenere posizioni in prima pagina su Google. Questo è il motivo per cui applichiamo le migliori pratiche SEO in ogni sito che progettiamo e sviluppiamo.</p>
+
+    <p class="font-bold italic mt-12">Quanto tempo ci vorrà per costruire un nuovo sito web per il mio studio legale?</p>
+    <p class="mt-4">Garantiamo la consegna del sito entro 45 giorni. In alcuni casi, possiamo costruire il tuo sito in tempi anche più brevi, a seconda delle esigenze del tuo studio con il nuovo progetto di design e sviluppo. Costruire un ottimo sito web per uno studio legale richiede tempo e tipicamente investiamo centinaia di ore nella progettazione di un sito esteticamente moderno e nella programmazione del sito con codice ottimizzato per i motori di ricerca.</p>
+    
+    <p class="font-bold italic mt-12">Lavorate con studi piccoli/grandi?</p>
+    <p class="mt-4">Lavoriamo con tutti i tipi di studi, dai singoli professionisti ai grandi studi legali con decine di collaboratori. Abbiamo soluzioni di design per siti web di studi legali adatte alle tue esigenze specifiche. Quindi, sia che tu abbia uno studio piccolo, di medie dimensioni o grande, possiamo aiutarti a farti eccellere nella tua presenza online.</p>
+
+    <p class="font-bold italic mt-12">Quanto costa il design di un sito web per studi legali?</p>
+    <p class="mt-4">Il costo per un nuovo design di sito web può variare notevolmente e dipenderà dalle specifiche del tuo progetto. Se stiamo creando un nuovo sito da zero, è più semplice rispetto alla ricostruzione di un sito web esistente con migliaia di pagine. I costi variano molto perché le esigenze di ogni nuovo cliente che prendiamo in carico sono diverse ogni volta. Stai cercando di ridisegnare il sito web esistente del tuo studio legale? Il tuo sito ha bisogno della capacità di programmare appuntamenti o effettuare pagamenti? Vuoi trasferire tutte le immagini dal tuo vecchio sito al nuovo sito ridisegnato? Se ci contatti, possiamo fornirti un preventivo gratuito dopo aver scoperto di più sulla tua situazione attuale.</p>
+
+    <p class="font-bold italic mt-12">Usate dei template pre-compilati di Wordpress?</p>
+    <p class="mt-4">Assolutamente no. I temi WordPress sono tipicamente sovraccarichi di codice superfluo, che porta a prestazioni del sito web scadenti, il che può impattare negativamente sui tassi di conversione e sui ranking del sito. Tutti i siti che sviluppiamo vengono scritti da 0 con codice, potendo così assicurarci di usare esclusivamente il materiale necessario, senza rallentamenti. La maggior parte delle aziende di web design utilizza temi WordPress preconfezionati perché sono facili da costruire, il che significa molto meno tempo di programmazione per costruire un sito. Tuttavia, questo non va bene se ti importa dei tuoi ranking sui motori di ricerca e vuoi massimizzare i tassi di conversione.</p>
+
+    <p class="font-bold italic mt-12">Una volta consegnato il sito, ci sono vincoli di recesso?</p>
+    <p class="mt-4">Solitamente le agenzie, sopratutto quelle più grandi, usano delle antipatiche strategie di retenzione dei clienti: tempi di preavviso, penali, contratti di rinnovo automatico...Noi non facciamo nulla di tutto questo. Una volta terminata il standard da 6 mesi, possiamo rinnovare la collaborazione esclusivmanete stipulando un nuovo contratto. Ed anche se decidiamo di non continuare con un nuovo contratto, il sito rimarrà vostro, con dei costi di gestione minimi.</p>
+
+    <!-- CTA -->
+    <div class="">
+    <div class="mx-auto max-w-7xl py-12 lg:px-8">
+      <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-8 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+        <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Pronto per un agenzia di marketing specializzata che funziona?</h2>
+        <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Prenota una consulenza gratuita e senza impegno</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Clicca per una consulenza strategica gratuita</a>
+        </div>
+        <p class="pt-4">Oppure chiama il 388 568 6658</p>
+        <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+          <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
+          <defs>
+            <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+              <stop stop-color="#7775D6" />
+              <stop offset="1" stop-color="#E935C1" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+
   </div>
 </div>
 
