@@ -9,13 +9,13 @@
 
     <h1 class="text-2xl font-bold mt-12 text-primary">La SEO per gli studi legali è molto competitiva, affidati ad un agenzia specializzata!</h1>
     <div class="mt-6 max-w-2xl">
-        <p>Uno dei settori più competitive in tutta l'industria dell'ottimizzazione per i motori di ricerca è il SEO per avvocati. Con migliaia di studi legali in tutto il paese che competono per una preziosa visibilità in prima pagina su Google, solo una piccola frazione riesce a generare costantemente contatti da Internet. Se vuoi risultati eccellenti dal marketing online del tuo studio legale, hai bisogno di un agenzia di marketing specializzata.</p>
+        <p>Uno dei settori più competitivi in tutta l'industria dell'ottimizzazione per i motori di ricerca è il SEO per avvocati. Con migliaia di studi legali in tutto il paese che competono per una preziosa visibilità in prima pagina su Google, solo una piccola frazione riesce a generare costantemente contatti da Internet. Se vuoi risultati eccellenti dal marketing online del tuo studio legale, hai bisogno di un agenzia di marketing specializzata.</p>
 
     <h1 class="mt-16 text-3xl font-bold tracking-tight text-primary">Come scegliere la migliore agenzia di marketing per la SEO del tuo studio legale</h1>
     <p class="mt-6">Scegliere un'azienda per gestire la visibilità del tuo studio legale non è facile. Ci sono molte aziende che promettono dei pacchetti SEO, quindi come scegliere la soluzione migliore? Come sapere a quale affidarsi? Ecco alcune delle cose più importanti che l'azienda che assumi dovrebbe avere.</p>
 
     <h2 class="mt-16 text-2xl font-bold tracking-tight">Percorso dedicato per gli studi legali</h2>
-    <p class="mt-4">Ogni settore è diverso e quello degli studi legali è molto particolare, perchè si tratta di ottenere contatti di qualità, non semplice quantitò. Per questo è fondamentale affidarsi ad un agenzia che conosca a fondo le problematiche e le necessità che affrontano gli avvocati per la loro gestione SEO online. Così come è importante affidarsi ad un avvocato specializzato per essere aiutati al meglio, lo è anche affidarsi ad un agenzia SEO specializzata. </p>
+    <p class="mt-4">Ogni settore è diverso e quello degli studi legali è molto particolare, perchè si tratta di ottenere contatti di qualità, non semplice quantità. Per questo è fondamentale affidarsi ad un agenzia che conosca a fondo le problematiche e le necessità che affrontano gli avvocati per la loro gestione SEO online. Così come è importante affidarsi ad un avvocato specializzato per essere aiutati al meglio, lo è anche affidarsi ad un agenzia SEO specializzata. </p>
 
     <h2 class="mt-16 text-2xl font-bold tracking-tight">Ricerca e aggiornamento continui</h2>
     <p class="mt-4">Gli algoritmi di Google sono estremamente complessi ed in continua evoluzione: ogni anno ci sono centinaia di aggiornamenti. Per questo è importante avere una persona dedicata a testare continuamente cosa funziona o meno, analizzando i cambiamenti e ricalibrando continuamente la strategia SEO per il tuo studio legale. La capacità di analisi degli algoritmi di Google non può essere sottovalutata</p>
@@ -25,7 +25,7 @@
 
     <h2 class="mt-16 text-2xl font-bold tracking-tight">L'importanza di una proposta su misura per il tuo studio</h2>
     <p class="mt-4">
-    Diffida di un'azienda che ti fornisce un preventivo prima di aver condotto un'analisi del tuo sito e dei tuoi concorrenti SEO su Google. Dovresti avere un piano SEO personalizzato che incontri i tuoi obiettivi di marketing, perché proprio come i casi che gestisci, non ci sono due casi esattamente uguali.</p>
+    Diffida di un'azienda che ti fornisce un preventivo prima di aver condotto un'analisi del tuo sito e dei tuoi concorrenti SEO su Google. Dovresti avere un piano SEO personalizzato che incontri i tuoi obiettivi di marketing, perché proprio come le pratiche che gestisci, non ci sono mai due pratiche esattamente uguali.</p>
 
     <h2 class="mt-16 text-2xl font-bold tracking-tight">Una strategia di marketing "all-inclusive"</h2>
     <p class="mt-4">
@@ -78,7 +78,7 @@
       <ul role="list" class="mt-8 max-w-xl space-y-8">
         <li class="flex gap-x-3">
           <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-          <span><strong class="font-semibold">Discussione dei tuoi obbiettivi di marketing</strong> Il primo passo del nostro processo è avere una discussione per scoprire quali sono i tuoi obiettivi di marketing. Se crediamo di avere una soluzione che ti aiuterà a raggiungere i tuoi obiettivi, procediamo al passo 2 del processo. In caso contrario, te lo faremo sapere sin dall'inizio, così da non perdere tempo reciprocamente.</span>
+          <span><strong class="font-semibold">Discussione dei tuoi obbiettivi di marketing</strong> Il primo passo del nostro processo è avere una discussione per scoprire quali sono i tuoi obiettivi di marketing. Se crediamo di avere una soluzione che ti aiuterà a raggiungere i tuoi obiettivi, procediamo al passo successivo. In caso contrario, te lo faremo sapere sin dall'inizio, così da non perdere tempo reciprocamente.</span>
         </li>
         <li class="flex gap-x-3">
           <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
@@ -116,7 +116,7 @@
     La durata del tempo necessario per il SEO dipende da molti fattori, tra cui la velocità del tuo sito web, il livello di concorrenza su Google per i termini per cui desideri posizionarti, il mercato geografico in cui ti trovi e le parole chiave specifiche per cui vuoi posizionarti. Solitamente, si inizia a vedere miglioramenti nei ranking generali già dopo circa 4 mesi, ma per le frasi di ricerca più competitive può volerci fino a un anno o più.</p>
 
     <h1 class="mt-16 text-3xl font-bold tracking-tight text-primary">Consigli veloci per la SEO dei studi legali</h1>
-    <p class="mt-4 mb-6">Per gli avvocati interessati a imparare come ottimizzare da soli il proprio sito per i motori di ricerca o semplicemente alla ricerca di informazioni, ecco alcuni consigli sull'SEO per studi legali:</p>
+    <p class="mt-4 mb-6">Per gli avvocati interessati a imparare come ottimizzare da soli il proprio sito per i motori di ricerca o semplicemente alla ricerca di informazioni, ecco alcuni consigli sulla SEO per studi legali:</p>
 
     <span><strong class="font-semibold">1. Crea dei contenuti migliori rispetto alla concorrenza</strong><br/> Tecnicamente, esistono migliaia di fattori che influenzano il posizionamento su Google. Uno dei più importanti è il contenuto presente sul tuo sito web. Più specificamente, il contenuto delle tue pagine deve essere migliore rispetto a quello dei tuoi concorrenti online per avere le migliori possibilità di posizionarti bene e migliorare la tua presenza web. Naturalmente, il termine "migliore" è soggettivo, ma mi riferisco a come viene percepito dall'algoritmo di Google.<br/><br/>Non esiste un unico insieme di regole per i contenuti applicabile a tutte le frasi chiave, poiché ciò che Google considera migliore dipende da come i tuoi contenuti soddisfano l'intento reale del ricercatore web. Molti scrittori di contenuti di marketing legale oggi pensano ancora che ripetere più volte le parole chiave significhi che i loro contenuti siano "SEO friendly". Questo non è più il caso con l'algoritmo di ranking di Google. Google vuole vedere variazione e argomenti semanticamente rilevanti inclusi in contenuti che siano di natura più comprensiva, soddisfacendo al contempo il vero intento dell'utente.</span>
 

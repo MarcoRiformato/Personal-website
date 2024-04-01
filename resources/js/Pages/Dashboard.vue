@@ -42,7 +42,7 @@
             </div>
             <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-secondary">{{ feature.name }}</h3>
             <p class="mt-5 text-base leading-7">{{ feature.description }}</p>
-            <button @click="scrollToSection(feature.href)" class="mt-6 text-sm font-semibold leading-6 text-primary cursor-pointer">
+            <button @click="$inertia.visit(route(feature.href))" class="mt-6 text-sm font-semibold leading-6 text-primary cursor-pointer">
               Scopri di più →
             </button>
           </div>
