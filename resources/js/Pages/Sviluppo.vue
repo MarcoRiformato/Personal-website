@@ -1,14 +1,14 @@
 <template>
-<AppLayout title="Sviluppo">
+<AppLayout title="Sviluppo web per studi legali">
 
 <div class="px-6 py-8 lg:px-8">
   <div class="mx-auto max-w-3xl text-base leading-7">
     <p class="text-base font-semibold leading-7 text-indigo-600">Primo step</p>
     <h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Sviluppo web per studi legali</h1>
-    <p class="mt-6 text-xl leading-8">Il sito web del tuo studio legale: è la chiave per un marketing di successo degli studi legali nel 2024. Il tuo sito web costituisce la base di tutte le tue attività di marketing. Investire nel sito giusto è assolutamente cruciale per massimizzare i risultati delle tue campagne di marketing.</p>
-    <div class="mt-10 max-w-2xl">
-      <p>Siamo specializzati in soluzioni di design per siti web di studi legali che ti aiuteranno a far crescere il tuo studio online. Il detto "Non si ha mai una seconda occasione per fare una buona prima impressione" si applica senza dubbio al web. In media, un visitatore si formerà un'opinione sul sito web del tuo studio legale nei primi tre secondi dall'accesso alla tua pagina. Il punto è che se il tuo sito web non cattura immediatamente l'attenzione dei tuoi visitatori, loro se ne andranno per passare al sito web del prossimo avvocato che trovano. Creeremo un sito personalizzato per il tuo studio legale che attirerà l'attenzione dei visitatori e aiuterà a convertire i visitatori del sito in nuovi clienti.</p>
-      <h1 class="text-2xl font-bold mt-4">Cosa rende il nostro servizio di sviluppo diverso?</h1>
+    <p class="mt-8 text-xl leading-8">Il sito web del tuo studio legale: è la chiave per un marketing di successo degli studi legali nel 2024. Il tuo sito web costituisce la base di tutte le tue attività di marketing. Investire nel sito giusto è assolutamente cruciale per massimizzare i risultati delle tue campagne di marketing.</p>
+    <div class="mt-6 max-w-2xl">
+
+      <h1 class="text-2xl font-bold mt-4">Perchè affidarti a noi per lo sviluppo del tuo sito</h1>
       <ul role="list" class="mt-8 max-w-xl space-y-8">
         <li class="flex gap-x-3">
           <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
@@ -77,7 +77,7 @@
     <p class="mt-4">Solitamente le agenzie, sopratutto quelle più grandi, usano delle antipatiche strategie di retenzione dei clienti: tempi di preavviso, penali, contratti di rinnovo automatico...Noi non facciamo nulla di tutto questo. Una volta terminata il standard da 6 mesi, possiamo rinnovare la collaborazione esclusivmanete stipulando un nuovo contratto. Ed anche se decidiamo di non continuare con un nuovo contratto, il sito rimarrà vostro, con dei costi di gestione minimi.</p>
 
     <!-- CTA -->
-    <div class="">
+  <div>
     <div class="mx-auto max-w-7xl py-12 lg:px-8">
       <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-8 text-center shadow-2xl sm:rounded-3xl sm:px-16">
         <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Pronto per un agenzia di marketing specializzata che funziona?</h2>
