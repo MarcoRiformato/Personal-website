@@ -106,10 +106,10 @@ function openCalendlyPopup(event) {
                         <span class="default-text">Voglio trasformare i visitatori in clienti</span>
                         <span class="alt-text hidden text-xs">Convertire visitatori in clienti</span>
                     </NavLink>
-                    <NavLink :href="route('blog')">
+                    <!--<NavLink :href="route('blog')">
                         <span class="default-text">Blog</span>
                         <span class="alt-text hidden text-xs">Blog</span>
-                    </NavLink>
+                    </NavLink>-->
                     <a as="button" class="mt-2 btn btn-primary text-xs" href="#" @click.prevent="openCalendlyPopup">Parliamo</a>
                 </div>
             </div>
