@@ -87,7 +87,7 @@ function openCalendlyPopup(event) {
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <NavLink :href="route('dashboard')">
+                    <NavLink :href="route('/')">
                         <ApplicationMark class="block h-9 w-auto" />
                     </NavLink>
                 </div>

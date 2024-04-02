@@ -37,7 +37,7 @@ Route::middleware([
     })->name('dashboard');
 });*/
 
-Route::get('/dashboard', function () {
+Route::get('/', function () {
     return Inertia::render('Dashboard', [
     ])->withViewData([
         'meta' => [
@@ -45,7 +45,7 @@ Route::get('/dashboard', function () {
             'description' => 'Marketing online per studi legali. ',
         ],
     ]);
-})->name('dashboard');
+})->name('/');
 
 
 Route::get('/prenota', [BookingsController::class, 'Book'])->name('book');
