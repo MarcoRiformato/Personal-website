@@ -19,7 +19,7 @@
         <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Ottieni più clienti qualificati<br/> per il tuo stuido</h1>
         <p class="mt-6 text-lg leading-8 text-gray-300">Agenzia di marketing specializzata in studi legali</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <btn href="#" class="btn btn-primary">Parliamo</btn>
+          <btn @click.prevent="openCalendlyPopup" href="#" class="btn btn-primary">Parliamo</btn>
         </div>
       </div>
     </div>
@@ -143,6 +143,29 @@
     </div>
 </div>
 
+<!-- CTA -->
+<div>
+    <div class="mx-auto max-w-7xl py-12 lg:px-8">
+      <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-8 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+        <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Pronto per un agenzia di marketing specializzata che funziona?</h2>
+        <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Prenota una consulenza gratuita e senza impegno</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#" @click.prevent="openCalendlyPopup" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Clicca per una consulenza strategica gratuita</a>
+        </div>
+        <p class="pt-4">Oppure chiama il 388 568 6658</p>
+        <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+          <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
+          <defs>
+            <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+              <stop stop-color="#7775D6" />
+              <stop offset="1" stop-color="#E935C1" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+
 <!-- Longer description
 <div class="bg-gray-900 px-6 py-12 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
@@ -186,11 +209,8 @@
 <script setup>
 import { ref } from 'vue'
 import AppLayout from '@/Layouts/AppLayout.vue';
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { MinusSmallIcon, PlusSmallIcon, GlobeEuropeAfricaIcon, MagnifyingGlassIcon, CursorArrowRaysIcon,
-  DevicePhoneMobileIcon, PencilSquareIcon, CalendarDaysIcon, PresentationChartBarIcon, MapPinIcon,
-  CodeBracketIcon, DocumentChartBarIcon, FaceSmileIcon
+import { MinusSmallIcon, PlusSmallIcon, GlobeEuropeAfricaIcon, MagnifyingGlassIcon, CursorArrowRaysIcon, UserGroupIcon, ShieldCheckIcon, ClockIcon, PhoneIcon, CodeBracketSquareIcon
 } from '@heroicons/vue/24/outline'
 
 function openCalendlyPopup(event) {
@@ -210,25 +230,25 @@ const features = [
     name: 'Percorso dedicato 1:1',
     description: 'Verrete seguiti dallo studio del brand, allo sviluppo, alla scrittura di articoli, gestione della visibilità e dei risultati. Non si tratta di un approccio "automatizzato" come spesso succede.',
     href: 'sviluppo',
-    icon: GlobeEuropeAfricaIcon,
+    icon: UserGroupIcon,
   },
   {
     name: 'Esclusiva provinciale',
     description: 'Seguo un solo studio legale per provincia. Non sarebbe rispettoso (nè possibile) promettere a più studi della stessa zona di raggiungere un certo termine X per cui magari sono -indirettamente o meno- in competizione. L\' esclusiva da anche modo di dedicare più tempo ad ogni cliente.',
     href: 'seo',
-    icon: MagnifyingGlassIcon,
+    icon: ShieldCheckIcon,
   },
   {
     name: 'Anche per gli avvocati più indaffarati',
     description: 'Occupandomi anche della creazione di contenuti per il sito, così come del continuo aggiornamento dei servizi o di ogni sezione del sito, non vi è alcuna richiesta di tempo da parte dell\'avvocato: ognuno si occupi in ciò che fa meglio. Lascia a noi il tuo marketing online.',
     href: 'cro',
-    icon: CursorArrowRaysIcon,
+    icon: ClockIcon,
   },
   {
     name: 'Sempre in contatto',
     description: 'Niente approccio "finito il sito, passo al prossimo". Rimarremo sempre aggiornati con 2 videochiamate da 1 ora mensili, durante le quali parleremo dell\'andamento del sito, dove andiamo bene, dove c\'è da migliorare, ma sopratutto per ricalibrare continuamente la strategia.',
     href: 'cro',
-    icon: CursorArrowRaysIcon,
+    icon: PhoneIcon,
   },
 ]
 
@@ -237,7 +257,7 @@ const servizi = [
     name: 'Sviluppo del sito',
     description: 'Creato su misura per il vostro studio, veloce e ottimizzato per mobile. NO siti vetrina generici. Esperienza dell\'utente al centro: categorie di attività, facilità di navigazione e tanto altro per assicurarci che il sito, oltre che esteticamente apprezzabile, sia effettivamente utile per i visitatori.',
     href: 'sviluppo',
-    icon: GlobeEuropeAfricaIcon,
+    icon: CodeBracketSquareIcon,
   },
   {
     name: 'Maggiore visibilità nelle ricerce Google (SEO)',
