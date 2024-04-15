@@ -1,11 +1,14 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\BookingsController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\VersionController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,16 +40,7 @@ Route::middleware([
     })->name('dashboard');
 });*/
 
-Route::get('/', function () {
-    return Inertia::render('Dashboard', [
-    ])->withViewData([
-        'meta' => [
-            'title' => 'Benvenuto - Marco Riformato',
-            'description' => 'Marketing online per studi legali. ',
-        ],
-    ]);
-})->name('/');
-
+Route::get('/', [VersionController::class, 'index'])->name('/');
 
 Route::get('/prenota', [BookingsController::class, 'Book'])->name('book');
 
